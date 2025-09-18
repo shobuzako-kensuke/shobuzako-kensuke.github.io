@@ -11,3 +11,9 @@ assets/libs/
 node_modules/
 vendor
 .idea
+
+# VSCode configuration directories
+**/.vscode/
+
+# Windows Zone.Identifier metadata files
+**/*Zone.Identifier
