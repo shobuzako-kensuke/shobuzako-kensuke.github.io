@@ -77,6 +77,7 @@
 ## 不必要なファイルたち
 
 元々の [al-folio](https://github.com/alshedivat/al-folio) には，ウェブサイト編集とは無関係なファイル (リポジトリの説明など) が含まれるので，これらを削除した
+
 - `readme_preview/`
 - `.all-contributorsrc`
 - `CUSTOMIZE.md`
@@ -134,6 +135,7 @@
 | | `robots.txt` | 検索エンジンロボットへの指示書 |
 
 ## 背景色や文字色を変える方法
+
 - `_sass/_themes.scss` に色設定があるので，これをいじれば良い
 - `#000000` として直接指定しても良いし，`_sass/_variables.scss` で定義されているカラーを使っても良い
 
@@ -152,22 +154,25 @@
 | `icon` | ファビコン (ブラウザタブのアイコン) | 絵文字を直接貼り付ける or 画像 (正方形かつ低ピクセル (64 $\times$ 64)) を `assets/img/` 内に設置し，その画像名を `_config.yml` の `icon:` 以下で指定 ([Phosphor](https://phosphoricons.com/) からアイコンを取得可能) |
 | `url` | サイトのURL | 自分の GitHub Pages の URL を書く |
 | `baseurl` | サイトがサブディレクトリにある場合に設定 | 通常は空欄 |
-| `last_updated' | 最終更新日をフッターに表示 | 表示したい場合は `true` にする |
-| `impressum_path` | EU の法律で要求されるリンクを貼る | 日本では不要なので空欄にする |
-| `back_to_top` | ページ右下に「トップへ戻る」ボタンを表示 | 表示したい場合は `true` にする |
+| `last_updated' | 最終更新日をフッターに表示 | 表示したい場合は `true`にする |
+|`impressum_path`| EU の法律で要求されるリンクを貼る | 日本では不要なので空欄にする |
+|`back_to_top`| ページ右下に「トップへ戻る」ボタンを表示 | 表示したい場合は`true` にする |
 
 ## フッターの設定方法
 
 ### フッターを固定する
+
 - デフォルトではフッターが可動式で，いちいち画面に割り込んでくるのでうざい
 - これを固定する方法は以下の通り
   - `_config.yml` の `Layout` セクションを見つける
   - `footer_fixed:` の `true` を `false` に変更
 
 ### フッターを編集する
+
 - 編集は `_config.yml` と `_includes/footer.liquid` の二つを組み合わせて行う
 - `_config.yml` 最上部の `Site_settings` にある `footer_text` で，著作権と更新日以外の書きたい内容を書いておく
 - `_includes/footer.liquid` 内の以下のコンテンツをいじれば，表示内容が変わる
+
 ```
 {% capture footer_contents %}
   &copy; Copyright {{ site.time | date: '%Y' }}
@@ -182,15 +187,18 @@
   {% endif %}
 {% endcapture %}
 ```
+
 - `{{ }}` で囲まれた部分が引数になっており，`_config.yml` で設定した `footer_text` は `{{ site.footer_text }}` に代入される
 - これらを以下のように書き直した
+
 ```
 footer_text: >
-Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme 
+Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme
 (<a href="https://github.com/shobuzako-kensuke/shobuzako-kensuke.github.io" target="_blank">my adaptation</a>).
 Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 Icon by <a href="https://phosphoricons.com/" target="_blank">Phosphor</a>.
 ```
+
 ```
 {% capture footer_contents %}
   &copy; Copyright 2025
@@ -206,6 +214,7 @@ Icon by <a href="https://phosphoricons.com/" target="_blank">Phosphor</a>.
   {% endif %}
 {% endcapture %}
 ```
+
 - 主な変更点は以下
   - "Powered by ~" に "(my adaptation)" を入れたこと
   - %copy; Copyright "2025" と手で書いたこと
@@ -214,4 +223,3 @@ Icon by <a href="https://phosphoricons.com/" target="_blank">Phosphor</a>.
 
 > [!Note]
 > 可愛いアイコン (ファビコン) がある場所：[https://phosphoricons.com/](https://phosphoricons.com/)
-

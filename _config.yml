@@ -4,10 +4,10 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Kensuke
-middle_name: 
+middle_name:
 last_name: Shobuzako
-contact_note: >  # > マークは改行しても一文として扱われる記号．本当に改行したいなら，空白行を作る
-  
+contact_note: > # > マークは改行しても一文として扱われる記号．本当に改行したいなら，空白行を作る
+
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Official homepage of Kensuke Shobuzako.
 footer_text: >
