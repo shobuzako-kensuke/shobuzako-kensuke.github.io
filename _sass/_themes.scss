@@ -7,16 +7,17 @@
 :root {
   color-scheme: light;
   // ダークモードの配色を持ってきた
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
+  // --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #{$black-color};
+  --global-code-bg-color: #{$grey-900};
+  --global-text-color: #{$white-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #48D1CC;
+  --global-hover-color:  #48D1CC;
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-footer-bg-color: #{$black-color};
+  --global-footer-text-color: #{$white-color};
+  --global-footer-link-color: #48D1CC;
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
@@ -124,16 +125,18 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
+  // 色は _sass/_variables.scss のものを使用可能
+  // それ以外の場合は，#000000 等で直接指定する
+  --global-bg-color: #{$black-color};
+  --global-code-bg-color: #{$grey-900};
+  --global-text-color: #{$white-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #48D1CC;
+  --global-hover-color:  #48D1CC;
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-footer-bg-color: #{$black-color};
+  --global-footer-text-color: #{$white-color};
+  --global-footer-link-color: #48D1CC;
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};

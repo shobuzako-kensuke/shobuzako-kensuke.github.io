@@ -16,6 +16,11 @@
   - [ライトモードを除去してダークモードのみにする](#ライトモードを除去してダークモードのみにする)
   - [不必要なファイルたち](#不必要なファイルたち)
   - [必要なファイルたちと説明](#必要なファイルたちと説明)
+  - [背景色や文字色を変える方法](#背景色や文字色を変える方法)
+  - [基本情報の設定方法](#基本情報の設定方法)
+  - [フッターの設定方法](#フッターの設定方法)
+    - [フッターを固定する](#フッターを固定する)
+    - [フッターを編集する](#フッターを編集する)
 
 ## インストールに関する備忘録
 
@@ -24,7 +29,7 @@
 
 ## README を編集する際の注意点
 
-- READMEの書き方readme を勝手に変更したら「書き方が汚いので `npx prettier . --check` を実行せよ」と github actions に怒られた
+- README を勝手に変更したら「書き方が汚いので `npx prettier . --check` を実行せよ」と github actions に怒られた
 - `npx prettier` とは，コードのインデントや改行位置といった書き方のスタイルを綺麗にしてくれるコマンド
 - WSL2では `npx` がデフォルトで使用可能だが，バージョンが古かったので (`npx -v` で確認)，Node.js のバージョンを更新する `nvm` をインストールし ([参考資料](https://qiita.com/ffggss/items/94f1c4c5d311db2ec71a))，再起動後，`nvm install --lts` を実行した
 - その後，`npx prettier . --check` を実行すると，今度はパッケージがないと怒られたので，`npm install` を実行し，現在のディレクトリに `package-lock.json` を追加した (`package.json` に必要な package が書かれてある)
@@ -32,8 +37,8 @@
 
 > [!Note]
 >
-> - README を編集したら，`npx prettier . --check` を実行し，問題があれば `npx prettier . --write` を実行する
-> - `.` は再帰的に調べてくれる
+> - これからは README を編集したら，`npx prettier . --check` を実行し，問題があれば `npx prettier . --write` を実行する
+> - このコマンドにおいては `.` は再帰的に調べてくれるようである
 > - 特定のファイルだけを `--write` したい場合は，上記の `.` にそのファイル名を入れる
 
 ## 編集画面をローカルに出力する方法
@@ -71,14 +76,14 @@
 
 ## 不必要なファイルたち
 
-- 元々の [al-folio](https://github.com/alshedivat/al-folio) には，ウェブサイト編集とは無関係なファイル (リポジトリの説明など) が含まれるので，これらを削除した
-  - `readme_preview/`
-  - `.all-contributorsrc`
-  - `CUSTOMIZE.md`
-  - `CONTRIBUTING.md`
-  - `FAQ.md`
-  - `INSTALL.md`
-  - `requirement.txt`
+元々の [al-folio](https://github.com/alshedivat/al-folio) には，ウェブサイト編集とは無関係なファイル (リポジトリの説明など) が含まれるので，これらを削除した
+- `readme_preview/`
+- `.all-contributorsrc`
+- `CUSTOMIZE.md`
+- `CONTRIBUTING.md`
+- `FAQ.md`
+- `INSTALL.md`
+- `requirement.txt`
 
 ## 必要なファイルたちと説明
 
@@ -127,3 +132,86 @@
 | | `LICENSE` | ライセンス (消去してはいけない) |
 | | `purgecss.config.js` | 不要な CSS を削減してサイトを高速化するツールの設定ファイル |
 | | `robots.txt` | 検索エンジンロボットへの指示書 |
+
+## 背景色や文字色を変える方法
+- `_sass/_themes.scss` に色設定があるので，これをいじれば良い
+- `#000000` として直接指定しても良いし，`_sass/_variables.scss` で定義されているカラーを使っても良い
+
+## 基本情報の設定方法
+
+`_config.yml` 最上部の `Site settings` を以下のように変更
+| 項目 | 説明 | すること |
+| :--- | :--- | :--- |
+| `title` | ウェブサイトの名前 | `blank` (デフォルト) のままで ok (勝手に名前が入る) |
+| `*_name` | 名前 | 自分の名前を入れる (middle name は空欄で良い) |
+| `contact_note` | SNS アイコン郡の下の注釈 | 適当に書く |
+| `description` | サイトの短い説明文 (サイトを共有した時に表示される) | 例：`Official homepage of Kensuke Shobuzako` |
+| `footer_text` | フッターに表示されるクレジット情報 | [フッターの設定方法](#フッターの設定方法) と組み合わせて使う |
+| `keywords` | 検索エンジン向けのキーワード (設定しなくても良い) | 例：`Kensuke Shobuzako, researcher, computational fluid dynamics, particle methods` |
+| `lang` | 言語 | 例：`ja` (日本語) |
+| `icon` | ファビコン (ブラウザタブのアイコン) | 絵文字を直接貼り付ける or 画像 (正方形かつ低ピクセル (64 $\times$ 64)) を `assets/img/` 内に設置し，その画像名を `_config.yml` の `icon:` 以下で指定 ([Phosphor](https://phosphoricons.com/) からアイコンを取得可能) |
+| `url` | サイトのURL | 自分の GitHub Pages の URL を書く |
+| `baseurl` | サイトがサブディレクトリにある場合に設定 | 通常は空欄 |
+| `last_updated' | 最終更新日をフッターに表示 | 表示したい場合は `true` にする |
+| `impressum_path` | EU の法律で要求されるリンクを貼る | 日本では不要なので空欄にする |
+| `back_to_top` | ページ右下に「トップへ戻る」ボタンを表示 | 表示したい場合は `true` にする |
+
+## フッターの設定方法
+
+### フッターを固定する
+- デフォルトではフッターが可動式で，いちいち画面に割り込んでくるのでうざい
+- これを固定する方法は以下の通り
+  - `_config.yml` の `Layout` セクションを見つける
+  - `footer_fixed:` の `true` を `false` に変更
+
+### フッターを編集する
+- 編集は `_config.yml` と `_includes/footer.liquid` の二つを組み合わせて行う
+- `_config.yml` 最上部の `Site_settings` にある `footer_text` で，著作権と更新日以外の書きたい内容を書いておく
+- `_includes/footer.liquid` 内の以下のコンテンツをいじれば，表示内容が変わる
+```
+{% capture footer_contents %}
+  &copy; Copyright {{ site.time | date: '%Y' }}
+  {{ site.first_name }}
+  {{ site.middle_name }}
+  {{ site.last_name }}. {{ site.footer_text }}
+  {% if site.impressum_path %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+  {% endif %}
+  {% if site.last_updated %}
+    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+  {% endif %}
+{% endcapture %}
+```
+- `{{ }}` で囲まれた部分が引数になっており，`_config.yml` で設定した `footer_text` は `{{ site.footer_text }}` に代入される
+- これらを以下のように書き直した
+```
+footer_text: >
+Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme 
+(<a href="https://github.com/shobuzako-kensuke/shobuzako-kensuke.github.io" target="_blank">my adaptation</a>).
+Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+Icon by <a href="https://phosphoricons.com/" target="_blank">Phosphor</a>.
+```
+```
+{% capture footer_contents %}
+  &copy; Copyright 2025
+  {{ site.first_name }}
+  {{ site.middle_name }}
+  {{ site.last_name }}.<br>
+  {{ site.footer_text }} <br>
+  {% if site.impressum_path %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+  {% endif %}
+  {% if site.last_updated %}
+    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+  {% endif %}
+{% endcapture %}
+```
+- 主な変更点は以下
+  - "Powered by ~" に "(my adaptation)" を入れたこと
+  - %copy; Copyright "2025" と手で書いたこと
+  - `<br>` を追加して改行したこと
+  - "Icon by Phosphor." を追記したこと
+
+> [!Note]
+> 可愛いアイコン (ファビコン) がある場所：[https://phosphoricons.com/](https://phosphoricons.com/)
+
