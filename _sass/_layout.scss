@@ -57,3 +57,45 @@ body.sticky-bottom-footer {
 .toggle-container {
   display: none;
 }
+
+/* ----- ヘッダー用SNSアイコンのカスタムスタイル ----- */
+.header-socials {
+  .social {
+    text-align: left; // アイコンを左寄せに（中央寄せなら center）
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .contact-icons {
+    font-size: 1.5rem !important; // アイコンのサイズ
+  }
+  a {
+    padding: 0 0.6rem 0 0; // アイコン間の右側の余白 (上 右 下 左 の順に余白を指定)
+  }
+}
+
+/* ----- 'researchmap'リンクの文字サイズを個別に調整 ----- */
+.header-socials .social a[title="researchmap"] {
+  font-size: 0.7em; /* 他の文字の70%のサイズにする */
+  display: inline-block;
+  padding: 0 0.6rem 1rem 0;
+}
+
+/* ----- タイトルと本文の間に余白を追加 ----- */
+.post-header {
+  margin-bottom: 2rem;
+}
+
+/* ----- Aboutページのセクション間の余白を調整 ----- */
+.post > article > h2 {
+  margin-top: 2rem; /* セクションの上の余白 */
+  margin-bottom: 0.5rem; /* セクションの下の余白 */
+}
+
+.extra-margin-top {
+  margin-top: 2rem; /* 上に大きな余白を追加 */
+}
+
+/* ----- 英語テキスト用のカスタムカラー ----- */
+.en-text {
+  color: #99a1a8;
+}

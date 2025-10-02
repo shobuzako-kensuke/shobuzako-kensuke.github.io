@@ -4,7 +4,9 @@
 - [al-folio](https://github.com/alshedivat/al-folio) のテンプレートを使用
 
 > [!Note]
-> 導入環境は Windows 11上の WSL2
+>
+> - 導入環境は Windows 11上の WSL2
+> - VS Code のおすすめ拡張機能は `Shopify Liquid`
 
 ## 目次
 
@@ -21,6 +23,9 @@
   - [フッターの設定方法](#フッターの設定方法)
     - [フッターを固定する](#フッターを固定する)
     - [フッターを編集する](#フッターを編集する)
+  - [Home の編集](#home-の編集)
+    - [SNS リンク (アイコン) の設定](#sns-リンク-アイコン-の設定)
+  - [Profile の編集](#profile-の編集)
 
 ## インストールに関する備忘録
 
@@ -49,15 +54,16 @@
   - `Docker Desktop` がデスクトップに作成されるので起動
   - 歯車マークから `Resources`，`WSL integration` の順に選択
   - `Enable integration with my default WSL distro` をオンにし，その下の `Ubuntu` もオンにして設定を保存
-  - HPの材料が置いてあるローカルディレクトリに移動して，`docker --version` を実行して，バージョンが出力されたらok
+- HPの材料が置いてあるローカルディレクトリに移動して，`docker --version` を実行して，バージョンが出力されたらok
 - `sudo docker compose pull` を実行して必要な部品をダウンロード
 - `sudo docker compose up` を実行してローカルサーバーを起動
 - Web ブラウザから `http://localhost:8080` にアクセスすると，編集画面が見える
 - ローカルサーバーの電源を切るには `ctrl + C` を実行
-  > [!Note]
-  >
-  > - これからは `Docker Desktop` をクリックして，docker を起動した後，`sudo docker compose up` を実行し，`http://localhost:8080` で編集画面を随時確認
-  > - 編集箇所は自動で反映されるが，ブラウザを再リロードする必要がある
+
+> [!Note]
+>
+> - これからは `Docker Desktop` をクリックして，docker を起動した後，`sudo docker compose up` を実行し，`http://localhost:8080` で編集画面を随時確認
+> - 編集箇所は自動で反映されるが，ブラウザを再リロードして確認すべし
 
 ## ライトモードを除去してダークモードのみにする
 
@@ -94,7 +100,7 @@
 | **編集するコンテンツ** | `_bibliography` | 論文リストのデータ (.bib) を保存する場所 |
 | | `_books` | 読んだ本のリストなど，カスタムコンテンツを保存する場所 |
 | | `_news` | news 項目を保存する場所 |
-| | `pages` | About (Home) や CV など，サイトの固定頁を保存する場所 |
+| | `pages` | About (Home) や CV など，サイトの固定頁ページを保存する場所 |
 | | `_posts` | blog や news 記事を保存する場所 |
 | | `_projects` | projects のコンテンツを保存する場所 |
 | | `_assets` | サイトで使う画像やファイルを置く場所　|
@@ -126,8 +132,7 @@
 | コード整形ツール | `.pre-commit-config.yaml` | Git コミット前に，Prettier を自動実行するためのチェックリスト |
 | | `.prettierignore` | Prettier の無視リスト |
 | | `prettierrc` | Prettier のルールブック |
-| その他 | `_plugins` | Jekyll の機能を拡張したり，便利なスクリプトを置いたりする場所 |
-| | `_scripts` | |
+| その他 | `_plugins`, `_scripts` | Jekyll の機能を拡張したり，便利なスクリプトを置いたりする場所 |
 | | `.devcontainer` | VS Code 用の開発環境の設計図 |
 | | `gitattributes` | 改行コードの統一など，Git の挙動を決めるルールブック |
 | | `LICENSE` | ライセンス (消去してはいけない) |
@@ -144,17 +149,17 @@
 `_config.yml` 最上部の `Site settings` を以下のように変更
 | 項目 | 説明 | すること |
 | :--- | :--- | :--- |
-| `title` | ウェブサイトの名前 | `blank` (デフォルト) のままで ok (勝手に名前が入る) |
+| `title` | ウェブサイトの名前 | `blank` にすると勝手に名前が入る |
 | `*_name` | 名前 | 自分の名前を入れる (middle name は空欄で良い) |
 | `contact_note` | SNS アイコン郡の下の注釈 | 適当に書く |
 | `description` | サイトの短い説明文 (サイトを共有した時に表示される) | 例：`Official homepage of Kensuke Shobuzako` |
 | `footer_text` | フッターに表示されるクレジット情報 | [フッターの設定方法](#フッターの設定方法) と組み合わせて使う |
 | `keywords` | 検索エンジン向けのキーワード (設定しなくても良い) | 例：`Kensuke Shobuzako, researcher, computational fluid dynamics, particle methods` |
 | `lang` | 言語 | 例：`ja` (日本語) |
-| `icon` | ファビコン (ブラウザタブのアイコン) | 絵文字を直接貼り付ける or 画像 (正方形かつ低ピクセル (64 $\times$ 64)) を `assets/img/` 内に設置し，その画像名を `_config.yml` の `icon:` 以下で指定 ([Phosphor](https://phosphoricons.com/) からアイコンを取得可能) |
+| `icon` | ファビコン (ブラウザタブのアイコン) | 絵文字を直接貼り付ける or 画像 (正方形かつ低ピクセル (64 $\times$ 64)) を `assets/img/` 内に設置し，その画像名を `_config.yml` の `icon:` 以下で指定 (自分は [Phosphor](https://phosphoricons.com/) からアイコンを取得) |
 | `url` | サイトのURL | 自分の GitHub Pages の URL を書く |
 | `baseurl` | サイトがサブディレクトリにある場合に設定 | 通常は空欄 |
-| `last_updated' | 最終更新日をフッターに表示 | 表示したい場合は `true`にする |
+| `last_updated` | 最終更新日をフッターに表示 | 表示したい場合は `true`にする |
 |`impressum_path`| EU の法律で要求されるリンクを貼る | 日本では不要なので空欄にする |
 |`back_to_top`| ページ右下に「トップへ戻る」ボタンを表示 | 表示したい場合は`true` にする |
 
@@ -223,3 +228,58 @@ Icon by <a href="https://phosphoricons.com/" target="_blank">Phosphor</a>.
 
 > [!Note]
 > 可愛いアイコン (ファビコン) がある場所：[https://phosphoricons.com/](https://phosphoricons.com/)
+
+## Home の編集
+
+`_pages/about.md` が主な編集場所．最初に書かれているフロントマターと呼ばれる部分 (`---` で囲まれた部分) をいじることで，設定を変更可能．
+
+自分で手を加えた後の設定は以下の通り．
+
+```
+---
+layout: about # _layouts/about.html というレイアウトを使用
+title: Home   # このページのタイトル (ナビゲーションバーに表示される)
+permalink: /  # このページの URL をトップに設定
+subtitle: Official homepage # タイトルの下に表示されるサブタイトルのテキスト
+
+profile:  # プロフィールの設定
+  align: right  # プロフィール画像を右側に配置
+  image: profile_pic.png  # プロフィール画像は assets/img/ に設置
+  image_circular: False # true にするとプロフィール画像が円になる
+  # more_info: >  # プロフィール画像の下に表示する住所
+  #   <p>555 your office number</p>
+  #   <p>123 your address street</p>
+  #   <p>Your City, State 12345</p>
+
+selected_papers: true # true にすると「Selected Papers」が追加される
+social: true # true にすると SNS アイコンが表示される
+
+announcements:  # お知らせ (_news) フォルダの内容の設定
+  enabled: true # true にすると，「news」が表示される
+  scrollable: true # true にすると，「news」が3件以上ある場合に，スクロールバーが表示される
+  limit: 5 # 「news」に表示する件数を最大で5件にする
+
+latest_posts:  # 最新ブログ記事 (_posts 内) の設定
+  enabled: False  # true にすると，表示される
+  scrollable: true # true にすると，「latest posts」が3件以上ある場合に，スクロールバーが表示される
+  limit: 3 # 「latest posts」に表示する件数を最大で3件にする
+---
+```
+
+> [!Note]
+>
+> - レイアウトを変更するには `_layout/about.html` を編集する必要あり
+> - 詳しくは書かないが，色々いじっている
+
+### SNS リンク (アイコン) の設定
+
+- 作業場所は `_data/socials.yml` と `_includes/social.liquid`
+- 前者で URL などを設定
+- 後者でアイコンを指定できるが，ここではデフォルト設定のまま
+- 自分は `_sass/_layout.scss` を編集して SNS アイコンの位置を上部に設置
+
+## Profile の編集
+
+- 基本設定は `_pages/cv.md` で行う
+- 内容の編集は `assets/json/resume.json` で行う
+- レイアウトの設定は `_layouts/cv.liquid` で行う

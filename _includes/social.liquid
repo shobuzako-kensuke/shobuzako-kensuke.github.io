@@ -1,5 +1,7 @@
 {% for social in site.data.socials %}
   {% case social[0] %}
+    {% when 'research_map' %}
+      <a href="https://researchmap.jp/{{ social[1] }}" title="researchmap">researchmap</a>
     {% when 'academia_edu' %}
       <a href="https://{{ social[1].organization }}.academia.edu/{{ social[1].username }}" title="Academia.edu"><i class="ai ai-academia"></i></a>
     {% when 'acm_id' %}

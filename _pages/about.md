@@ -1,34 +1,43 @@
 ---
-layout: about
-title: about
-permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+layout: about # _layouts/about.html というレイアウトを使用
+title: Home # このページのタイトル (ナビゲーションバーに表示される)
+permalink: / # このページの URL をトップに設定
+subtitle: 菖蒲迫 健介 のウェブサイトへようこそ # タイトルの下に表示されるサブタイトルのテキスト
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+profile: # プロフィールの設定
+  align: right # プロフィール画像を右側に配置
+  image: profile_pic.png # プロフィール画像は assets/img/ に設置
+  image_circular: false # true にするとプロフィール画像が円になる
+  # more_info: >  # プロフィール画像の下に表示する住所
+  #   <p>555 your office number</p>
+  #   <p>123 your address street</p>
+  #   <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true # true にすると「Selected Papers」が追加される
+social: true # true にすると SNS アイコンが表示される
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+announcements: # お知らせ (_news) フォルダの内容の設定
+  enabled: true # true にすると，「news」が表示される
+  scrollable: true # true にすると，「news」が3件以上ある場合に，スクロールバーが表示される
+  limit: 5 # 「news」に表示する件数を最大で5件にする
 
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+latest_posts: # 最新ブログ記事 (_posts 内) の設定
+  enabled: false # true にすると，表示される
+  scrollable: true # true にすると，「latest posts」が3件以上ある場合に，スクロールバーが表示される
+  limit: 3 # 「latest posts」に表示する件数を最大で3件にする
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+[九州大学](https://www.kyushu-u.ac.jp/ja/) [大学院理学府](https://www.sci.kyushu-u.ac.jp/) [地球惑星科学専攻](https://www.geo.kyushu-u.ac.jp/)<br>
+[地球内部ダイナミクス研究室 博士後期課程3年](http://dyna.geo.kyushu-u.ac.jp/)
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<span class="en-text">PhD Student, Department of Earth and Planetary Sciences, Graduate School of Science, Kyushu University</span>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+{: .extra-margin-top }
+
+**Keywords**
+
+- 粒子法 <span class="en-text">/ Particle Methods</span>
+- Smoothed Particle Hydrodynamics (SPH)
+- 流体計算 <span class="en-text">/ Computational Fluid Dynamics</span>
+- 惑星内部ダイナミクス <span class="en-text">/ Dynamics of Planetary Interiors</span>
+- 水理工学 <span class="en-text">/ Hydraulic Engineering</span>
