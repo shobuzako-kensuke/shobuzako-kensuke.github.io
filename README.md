@@ -31,6 +31,7 @@
   - [News の編集](#news-の編集)
   - [Blog の編集](#blog-の編集)
   - [Google サーチコンソール と アナリティクス への登録](#google-サーチコンソール-と-アナリティクス-への登録)
+    - [データが反映されてからすること](#データが反映されてからすること)
 
 ## [al-folio](https://github.com/alshedivat/al-folio) ウェブサイトの基本
 
@@ -368,3 +369,13 @@
 16. 続いて，`_config.yml` で `Optional Features` セクションを検索し，`enable_google_analytics:` の値を `true` にする
 17. `_config.yml` の変更を保存し，GitHub に `push` する
 18. サイトのデプロイ終了後，Google Search Console の「所有権の確認」画面に戻り，「確認」ボタンを押す
+
+> [!Note]
+> データが反映されるまでには，数時間～48時間ほどかかるので気長に待つこと
+
+### データが反映されてからすること
+
+- ウェブサイトの全ページリストを Google に渡して，検索エンジンに各ページのクロールを促す
+  - 手順：Google Search Console のメニューから「インデックス作成」-> 「サイトマップ」を選択し，「新しいサイトマップの追加」の入力欄に `sitemap.xml` と入力し送信
+- Google Analytics と Search Console を連携させる
+  - Google Analytics 上で「管理」 -> 「サービス間のリンク設定」 -> 「Search Console のリンク」と進み，適切なプロパティを選択する
