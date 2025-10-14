@@ -7,7 +7,7 @@ first_name: Kensuke
 middle_name:
 last_name: Shobuzako
 contact_note: > # > マークは改行しても一文として扱われる記号．本当に改行したいなら，空白行を作る
-  
+
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Official homepage of Kensuke Shobuzako.
 footer_text: >
@@ -264,7 +264,7 @@ display_categories: ["研究", "趣味"] # these categories will be displayed on
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Shobuzako, 健介]  # 菖蒲迫にすると上手くハイライトされないので，姓と名を逆にした
+  last_name: [Shobuzako, 健介] # 菖蒲迫にすると上手くハイライトされないので，姓と名を逆にした
   first_name: [Kensuke, K., 菖蒲迫]
 
   style: apa

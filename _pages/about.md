@@ -28,14 +28,16 @@ latest_posts: # 最新ブログ記事 (_posts 内) の設定
 ---
 
 **○ 所属 <span class="en-text">/ Affiliation</span>**<br>
+
 - [九州大学](https://www.kyushu-u.ac.jp/ja/) [大学院理学府](https://www.sci.kyushu-u.ac.jp/) [地球惑星科学専攻](https://www.geo.kyushu-u.ac.jp/)<br>
-[地球内部ダイナミクス研究室 博士後期課程3年](http://dyna.geo.kyushu-u.ac.jp/)<br>
-<span class="en-text">PhD Student, Department of Earth and Planetary Sciences, <br>
-Graduate School of Science, Kyushu University</span>
+  [地球内部ダイナミクス研究室 博士後期課程3年](http://dyna.geo.kyushu-u.ac.jp/)<br>
+  <span class="en-text">PhD Student, Department of Earth and Planetary Sciences, <br>
+  Graduate School of Science, Kyushu University</span>
 
 {: .extra-margin-top }
 
 **○ キーワード <span class="en-text">/ Keywords</span>**
+
 - 粒子法 <span class="en-text">/ Particle Methods</span>
 - Smoothed Particle Hydrodynamics (SPH)
 - 流体計算 <span class="en-text">/ Computational Fluid Dynamics</span>
@@ -52,4 +54,5 @@ Graduate School of Science, Kyushu University</span>
 {: .extra-margin-top }
 
 **○ 連絡先 <span class="en-text">/ Contact</span>**<br>
+
 - {{ 'shobuzako.kensuke.242@s.kyushu-u.ac.jp' | protect_email }}

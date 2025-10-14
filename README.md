@@ -27,7 +27,7 @@
   - [Research/Projects の編集](#researchprojects-の編集)
   - [Research/Publications と Research/Presentations の編集](#researchpublications-と-researchpresentations-の編集)
   - [Works/Software の編集](#workssoftware-の編集)
-  - [Works/Article と Works/Research\_Notes の編集](#worksarticle-と-worksresearch_notes-の編集)
+  - [Works/Article と Works/Research_Notes の編集](#worksarticle-と-worksresearch_notes-の編集)
   - [News の編集](#news-の編集)
   - [Blog の編集](#blog-の編集)
   - [Google サーチコンソール と アナリティクス と への登録](#google-サーチコンソール-と-アナリティクス-と-への登録)
@@ -48,7 +48,6 @@
 > - `.liquid` は Jekyll によって呼び出され，静的な html ファイルを生成する
 > - VS Code において，liquid ファイルのおすすめ拡張機能は `Shopify Liquid`
 
-
 ## インストール手順
 
 [元リポジトリの install 手順](https://github.com/alshedivat/al-folio/blob/main/INSTALL.md) の **Recommended Approach** に沿って行う．以下が具体的な手順：
@@ -60,7 +59,6 @@
 5. GitHub Actions が起動し，サイトのデプロイが始まる (4分くらい待つ)
 6. 成功すると，`main` ブランチに加えて，`gh-pages` ブランチが作成される
 7. その後，ブラウザ上で `https://<GitHub ユーザー名>.github.io` にアクセスすると，無事ウェブサイトが完成している(はず)
-
 
 > [!Note]
 > 以下の手順により，自分専用ウェブサイトを完成させてください．<br>
@@ -104,6 +102,7 @@
 オリジナルの [al-folio](https://github.com/alshedivat/al-folio) には，ダークモードとライトモードの2種類をユーザーが手動で切り替えられるスイッチがナビゲーションバーに存在する．<br>
 
 うっとおしいので，以下により削除した
+
 - `_sass/themes.scss` ファイルを開く
 - `:root` (ライトモードの配色)を `color-scheme: dark;` (ダークモードの配色)に塗り替える
 - 続いて，`_sass/layout.scss` ファイルを開く
@@ -133,16 +132,16 @@
 
 | 大区分                                 | ファイル/フォルダ         | 役割                                                                    |
 | :------------------------------------- | :------------------------ | :---------------------------------------------------------------------- |
-| **編集するコンテンツ**                 | `_bibliography`           | 研究業績データ (.bib) を保存する場所                                |
+| **編集するコンテンツ**                 | `_bibliography`           | 研究業績データ (.bib) を保存する場所                                    |
 |                                        | `_books`                  | 読んだ本のリストなど，カスタムコンテンツを保存する場所                  |
 |                                        | `_news`                   | news 項目を保存する場所                                                 |
-|                                        | `_pages`                   | Home や Profile といった固定ページを保存する場所             |
-|                                        | `_posts`                  | blog 記事を保存する場所                                         |
+|                                        | `_pages`                  | Home や Profile といった固定ページを保存する場所                        |
+|                                        | `_posts`                  | blog 記事を保存する場所                                                 |
 |                                        | `_projects`               | projects のコンテンツを保存する場所                                     |
-|                                        | `assets`                 | サイトで使う画像やファイルを置く場所　                                  |
-|                                        | `README.md`               | リポジトリの説明書                                                       |
-| | `_data`                   | Profile や SNS リンクなど，サイトで使うデータを管理する場所 |
-| 見た目やルールの設定  |  `_includes`               | ヘッダーやフッターなど，再利用される Liquid ファイルの部品置き場                  |
+|                                        | `assets`                  | サイトで使う画像やファイルを置く場所　                                  |
+|                                        | `README.md`               | リポジトリの説明書                                                      |
+|                                        | `_data`                   | Profile や SNS リンクなど，サイトで使うデータを管理する場所             |
+| 見た目やルールの設定                   | `_includes`               | ヘッダーやフッターなど，再利用される Liquid ファイルの部品置き場        |
 |                                        | `_layouts`                | ページの基本的なレイアウトを定義するテンプレート集                      |
 |                                        | `_sass`                   | サイトの配色，フォントなどを決める CSS の設計図                         |
 |                                        | `_config.yml`             | サイト全体のタイトルや，種々の機能の ON/OFF などを設定する司令塔        |
@@ -270,7 +269,6 @@
 なお，オリジナルの [al-folio](https://github.com/alshedivat/al-folio) では，他に様々なコンテンツが用意されているので，これらは削除せず，単に非表示にしている．<br>
 ナビゲーションバーの表示・非表示をいじりたい場合は，`_pages/*.md` に書いてあるフロントマター (---で囲まれた領域) の `nav: true` や `nav_order: *` を適宜変更すれば良い．
 
-
 ## Home の編集
 
 `_pages/about.md` が主な編集場所．最初に書かれているフロントマターと呼ばれる部分 (`---` で囲まれた部分) をいじることで，設定を変更可能．
@@ -294,7 +292,6 @@
 - Profile 画面のレイアウトの設定は `_layouts/cv.liquid` で行う
 - 各内容のレイアウトの設定は `_includes/resume/*.liquid` で個別に行う
 
-
 ## Research/Projects の編集
 
 - 基本設定は `_pages/projects.md` で行う
@@ -313,7 +310,6 @@
   - `selected = {true}` : 主要論文としてマークし，Home に表示
   - `preview` : 論文横に表示される画像 (`assets/img/publication_preview` に設置)
 
-
 ## Works/Software の編集
 
 - 基本設定は `_pages/software.md` で行う
@@ -322,7 +318,7 @@
 - デフォルトではトロフィー機能が有効になっているが，煩わしいので，以下の手順により非表示にした
   - `_config.yml` より `repo_trophies:` を検索
   - `enabled: true` を `false` に変更
-  
+
 ## Works/Article と Works/Research_Notes の編集
 
 - 編集は `_pages/articles.md` もしくは `_pages/research_notes.md` で行う
@@ -335,7 +331,7 @@
 - 基本設定は `_pages/news.md` で行う
 - 具体的な内容は `_news` ディレクトリに，各ニュース毎のマークダウンファイル (`.md`) を作成して，そこに書く
 - ただし，各ファイル名は作成日とタイトルを合わせた形式 (`YYYY-MM-DD-title.md`) で書く
-- 各ファイル上部にあるフロントマター (`---`で囲まれた場所) の `inline` は 
+- 各ファイル上部にあるフロントマター (`---`で囲まれた場所) の `inline` は
   - `false` にするとタイトルのみ表示される (ニュースが長い場合に有効)
   - `true` にすると全文が表示される
 
