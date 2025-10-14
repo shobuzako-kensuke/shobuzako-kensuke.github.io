@@ -30,7 +30,7 @@
   - [Works/Article と Works/Research_Notes の編集](#worksarticle-と-worksresearch_notes-の編集)
   - [News の編集](#news-の編集)
   - [Blog の編集](#blog-の編集)
-  - [Google サーチコンソール と アナリティクス と への登録](#google-サーチコンソール-と-アナリティクス-と-への登録)
+  - [Google サーチコンソール と アナリティクス への登録](#google-サーチコンソール-と-アナリティクス-への登録)
 
 ## [al-folio](https://github.com/alshedivat/al-folio) ウェブサイトの基本
 
@@ -343,9 +343,28 @@
 - ただし，各ファイル名は作成日とタイトルを合わせた形式 (`YYYY-MM-DD-title.md`) で書く
 - 自分へのメモ：表の具体的な項目内容は `assets/json/` 以下に保存する
 
-## Google [サーチコンソール](https://search.google.com/search-console/about?hl=ja) と [アナリティクス](https://developers.google.com/analytics?hl=ja) と への登録
+## Google [サーチコンソール](https://search.google.com/search-console/about?hl=ja) と [アナリティクス](https://developers.google.com/analytics?hl=ja) への登録
 
 - [Google サーチコンソール](https://search.google.com/search-console/about?hl=ja)とは，「どのような検索キーワードで何回表示され，何回クリックされたか」を記録してくれる無料のツール
 - [Google アナリティクス](https://developers.google.com/analytics?hl=ja) とは，「ウェブサイトを訪問した人がサイト内で何をしたか」を記録してくれる無料ツール
 - 特に，前者は [Google クローラー](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=ja) にウェブサイトの URL をリクエストして，検索エンジンへの登録を催促できる
 - 登録方法は以下の通り (Google アカウントが必要)．
+
+1. [Google Search Console](https://search.google.com/search-console/about?hl=ja) に自分の Google アカウントでログイン
+2. 左上のメニューから「プロパティの追加」を選択
+3. 「プロパティタイプの選択」が表示されるので，「URL プレフィックス」にウェブサイトの URL (例：`https://<GitHub ユーザー名>.github.io`) を入力し「続行」を選択
+4. 「所有権の確認」が表示されるので，「その他の確認方法」の中の「HTML タグ」を選択
+5. `<meta name="google-site-verification" content="<文字列>"` の `文字列` 部分のみをコピー (**確認画面はしばらくの間，そのままにしておく**)
+6. 自分のウェブサイトに移動し，`_config.yml` を開き，`Analytics and search engine verification` セクションを検索後，`google_site_verification` の部分に，コピーした文字列を張り付ける
+7. 続いて，`_config.yml` で `Optional Features` セクションを検索し，`enable_google_verification:` の値を `true` にする
+8. [Google Analytics](https://developers.google.com/analytics?hl=ja) に先ほどと同じ Google アカウントでログインする
+9. 左側のメニューから **歯車マーク**の「管理」を選択
+10. 上の方にある「作成」から「プロパティ」を選択し，`プロパティ名` (例：`個人用ウェブサイト`)，`タイムゾーン` (例：`日本`)，`通貨` (例：`日本円`) を設定する
+11. 「ビジネスの説明」および「ビジネス目標」は適当に選択
+12. 「データの収集」では「ウェブ」を選択し，ウェブサイトの URL (例：`https://<GitHub ユーザー名>.github.io`) を入力 ( 「ストリート名」は適当に入力)
+13. 入力後，「作成して続行」を選択
+14. 右上に表示される「測定ID」 (`G-` で始まる) をコピーする (**確認画面はしばらくの間，そのままにしておく**)
+15. 先ほどと同様に，自分のウェブサイトに移動し，`_config.yml` を開き，`Analytics and search engine verification` セクションを検索後，`google_analytics` の部分に，コピーした「測定ID」を張り付ける
+16. 続いて，`_config.yml` で `Optional Features` セクションを検索し，`enable_google_analytics:` の値を `true` にする
+17. `_config.yml` の変更を保存し，GitHub に `push` する
+18. サイトのデプロイ終了後，Google Search Console の「所有権の確認」画面に戻り，「確認」ボタンを押す
