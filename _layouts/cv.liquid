@@ -90,15 +90,38 @@ layout: default
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">
               {% if data[0] == 'basics' %}
-                自己紹介 <span class="en-text">(About)</span>
+                {% comment %} 自己紹介 <span class="en-text">(About)</span> {% endcomment %}
+                自己紹介
               {% elsif data[0] == 'work' %}
-                経歴 <span class="en-text">(Work)</span>
+                {% comment %} 経歴 <span class="en-text">(Work)</span> {% endcomment %}
+                経歴
               {% elsif data[0] == 'education' %}
-                学歴 <span class="en-text">(Education)</span>
+                {% comment %} 学歴 <span class="en-text">(Education)</span> {% endcomment %}
+                学歴
               {% elsif data[0] == 'awards' %}
-                受賞歴 <span class="en-text">(Awards)</span>
+                {% comment %} 受賞歴 <span class="en-text">(Awards)</span> {% endcomment %}
+                受賞歴
               {% elsif data[0] == 'volunteer' %}
-                委員歴 <span class="en-text">(Service)</span>
+                {% comment %} 委員歴 <span class="en-text">(Committee Memberships)</span> {% endcomment %}
+                委員歴
+              {% elsif data[0] == 'projects' %}
+                {% comment %} 獲得資金 <span class="en-text">(Grants)</span> {% endcomment %}
+                獲得資金
+              {% elsif data[0] == 'publications' %}
+                {% comment %} 主な出版物 <span class="en-text">(Publications)</span> {% endcomment %}
+                主な出版物
+              {% elsif data[0] == 'certificates' %}
+                {% comment %} 資格 <span class="en-text">(Certificates)</span> {% endcomment %}
+                資格
+              {% elsif data[0] == 'skills' %}
+                {% comment %} 教育活動 <span class="en-text">(Teaching)</span> {% endcomment %}
+                教育活動
+              {% elsif data[0] == 'languages' %}
+                {% comment %} 所属学会 <span class="en-text">(Professional Memberships)</span> {% endcomment %}
+                所属学会
+              {% elsif data[0] == 'interests' %}
+                {% comment %} その他 <span class="en-text">(Additional Information)</span> {% endcomment %}
+                その他
               {% else %}
                 {{ data[0] | capitalize }}
               {% endif %}

@@ -1,0 +1,30 @@
+---
+---
+
+@article{shobuzako_rinam_2025,
+author = {Kensuke Shobuzako and Shigeo Yoshida and Yoshifumi Kawada and Ryosuke Nakashima and Shujiro Fujioka and Mitsuteru Asai},
+title = {A generalized smoothed particle hydrodynamics method based on the moving least squares method and its discretization error estimation},
+journal = {Results in Applied Mathematics},
+volume = {26},
+pages = {100594},
+year = {2025},
+issn = {2590-0374},
+doi = {10.1016/j.rinam.2025.100594},
+url = {https://doi.org/10.1016/j.rinam.2025.100594},
+abbr = {Results Appl. Math.},
+selected = {true},
+preview = {shobuzako-2025-rinam.png},
+dimensions = {true},
+comments = {
+本論文では，(1) 従来の smoothed particle hydrodynamics (SPH) 法の離散化モデルが最小二乗法によって一般化できることを示し，(2) 様々なSPHモデルの離散化誤差を最小二乗法の打ち切り誤差に基づいて評価・検証しました．さらに，(3) 流体計算に関する複数のベンチマークテストを実施し，理論の妥当性を検証しました．
+
+SPH法の古典的な離散化モデルは粒子配置の対称性を仮定して定式化されているため，流れや変形によって粒子配置が乱れた場合には，その離散化精度に関して，0次精度も保証されません．つまり，SPH法の古典的なモデルは解像度を向上させても誤差が減少せず，数値計算の精度が向上しないのです．
+
+そこで，粒子配置が乱れた場合においても1次以上の空間離散化精度を保証する高精度なSPHモデルが非常に数多く提案されてきました．一方で，古典的なSPHモデルと高精度なSPHモデルの類似点と相違点を網羅的に調べた研究はこれまでになく，SPH法のユーザーにとって，最適なモデルを適切に選択することは容易ではありませんでした．このような背景から，本研究では既存のSPHモデルを包括するSPH法の一般化式の構築を目指しました．
+
+本研究によって，古典的なSPHモデルと高精度なSPHモデルは，移動最小二乗法（Moving Least Squares 法）と呼ばれる数学的な枠組みによって統一可能であることが分かりました．そこで，任意の次数の空間微分に対して任意の精度を有するSPH法の一般化モデル「**最小二乗SPH (Least Squares - SPH, LS-SPH) 法**」を新たに提案しました．加えて，その一般化式における打ち切り誤差を導出することで，様々なSPHモデルの離散化誤差を解析的に評価し，数値的に検証しました．これにより，SPH法の古典的な離散化モデルの全てにおいて，その離散化精度が**0次**または「**負の1次精度**」であるという重要な知見が得られました．本論文では，これらの理論的な妥当性を検証するため，流体計算に関する複数のベンチマークテストを実施し，従来法および提案手法の比較を行いました．
+
+関連記事
+- [九州大学 SPRING (研究業績紹介)](https://k-spring.kyushu-u.ac.jp/topics/research-achievements/kensuke-shobuzako-graduate-school-of-sciences-paper-has-been-accepted-for-results-in-applied-mathematics/)
+}
+}

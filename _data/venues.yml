@@ -1,9 +1,29 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Results Appl. Math.":
+  url: https://www.sciencedirect.com/journal/results-in-applied-mathematics
+  color: "#0000ff"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"計算工学会":
+  url: https://www.jsces.org/index.html
+  color: "#C71585"
 
-"Vision":
-  color: "#009f36"
+"惑星科学会":
+  url: https://www.wakusei.jp/
+  color: "#8A2BE2"
+
+"土木学会":
+  url: https://www.jsce.or.jp/
+  color: "#F57C00"
+
+"JpGU":
+  url: https://www.jpgu.org/
+  color: "#0000ff"
+
+"応用力学":
+  url: https://appmech-jsce.com/
+  color: "#303F9F"
+
+"国内研究会":
+  color: "#006400"
+
+"国内セミナー":
+  color: "#006400"

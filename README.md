@@ -1,20 +1,17 @@
-# Personal Website
+# Personal Website powered by a Japanese version of [al-folio](https://github.com/alshedivat/al-folio)
 
-- [https://shobuzako-kensuke.github.io/](https://shobuzako-kensuke.github.io/)
-- [al-folio](https://github.com/alshedivat/al-folio) のテンプレートを使用
-
-> [!Note]
->
-> - 導入環境は Windows 11上の WSL2
-> - VS Code のおすすめ拡張機能は `Shopify Liquid`
+- テンプレートとして [al-folio](https://github.com/alshedivat/al-folio) を使用
+- ただし，日本語ウェブサイト用に改変
+- 環境は Windows 11 ( [WSL2](https://qiita.com/zakoken/items/61141df6aeae9e3f8e36) を使用)
 
 ## 目次
 
-- [Personal Website](#personal-website)
+- [Personal Website powered by a Japanese version of al-folio](#personal-website-powered-by-a-japanese-version-of-al-folio)
   - [目次](#目次)
-  - [インストールに関する備忘録](#インストールに関する備忘録)
+  - [al-folio ウェブサイトの基本](#al-folio-ウェブサイトの基本)
+  - [インストール手順](#インストール手順)
   - [README を編集する際の注意点](#readme-を編集する際の注意点)
-  - [編集画面をローカルに出力する方法](#編集画面をローカルに出力する方法)
+  - [ローカル環境で仮想的にウェブサイトをビルドする](#ローカル環境で仮想的にウェブサイトをビルドする)
   - [ライトモードを除去してダークモードのみにする](#ライトモードを除去してダークモードのみにする)
   - [不必要なファイルたち](#不必要なファイルたち)
   - [必要なファイルたちと説明](#必要なファイルたちと説明)
@@ -23,14 +20,51 @@
   - [フッターの設定方法](#フッターの設定方法)
     - [フッターを固定する](#フッターを固定する)
     - [フッターを編集する](#フッターを編集する)
+  - [ナビゲーションバーの設定](#ナビゲーションバーの設定)
   - [Home の編集](#home-の編集)
     - [SNS リンク (アイコン) の設定](#sns-リンク-アイコン-の設定)
   - [Profile の編集](#profile-の編集)
+  - [Research/Projects の編集](#researchprojects-の編集)
+  - [Research/Publications と Research/Presentations の編集](#researchpublications-と-researchpresentations-の編集)
+  - [Works/Software の編集](#workssoftware-の編集)
+  - [Works/Article と Works/Research\_Notes の編集](#worksarticle-と-worksresearch_notes-の編集)
+  - [News の編集](#news-の編集)
+  - [Blog の編集](#blog-の編集)
+  - [Google サーチコンソール と アナリティクス と への登録](#google-サーチコンソール-と-アナリティクス-と-への登録)
 
-## インストールに関する備忘録
+## [al-folio](https://github.com/alshedivat/al-folio) ウェブサイトの基本
 
-- [install 手順](https://github.com/alshedivat/al-folio/blob/main/INSTALL.md) の **Recommended Approach** に沿って行う
-- 説明が分かりづらいが，`_config.yml` の `baseurl: /al-folio` の部分を `baseurl: ` に変更する必要がある
+- **コンテンツ作成**：Markdown (`.md`)，データファイル (`.yml`, `.json`, `.bib`) を編集する
+- **デザイン変更**：
+  - `_includes` や `_layout` ディレクトリに含まれる `.liquid` ファイルを編集する (構造)
+  - `_sass` ディレクトリに含まれる `.scss` ファイルを編集する (見た目)
+- **ビルド**：これらの部品は [Jekyll](https://jekyllrb-ja.github.io/) と呼ばれるツールを通じて，一連の html ファイルを生成する
+- **ローカルプレビュー**：[Docker](https://www.docker.com/ja-jp/) (`docker compose up`) により，公開前に内容を確認できる
+- **デプロイ (サーバー上にデータを置き，利用可能な状態にすること)**：`git push` などにより GitHub にデータがアップロードされると [GitHub Actions](https://github.co.jp/features/actions) により，Jekyll が自動的に呼び出されてウェブサイトのビルドが始まる
+- **公開**：そうして出来上がったウェブサイト (`_site` ディレクトリの中身)は，`gh-pages` ブランチに書き込まれ，[GitHub Pages](https://docs.github.com/ja/pages) を通じてインターネット上に公開される
+
+> [!Note]
+>
+> - `.liquid` は Jekyll によって呼び出され，静的な html ファイルを生成する
+> - VS Code において，liquid ファイルのおすすめ拡張機能は `Shopify Liquid`
+
+
+## インストール手順
+
+[元リポジトリの install 手順](https://github.com/alshedivat/al-folio/blob/main/INSTALL.md) の **Recommended Approach** に沿って行う．以下が具体的な手順：
+
+1. 本リポジトリを `Fork` ([英語のオリジナル版](https://github.com/alshedivat/al-folio)を利用したい場合は，オリジナル版を `Fork` する)
+2. その際，リポジトリ名は `<GitHub ユーザー名>.github.io` とし，"Copy the `main` branch only" にチェックを入れること
+3. `Fork` したら，`Setting` -> `Actions` -> `General` -> `Workflow permissions` の順に進み，`Read and write permissions` を選択し，保存する
+4. `Fork` したリポジトリ内の `_config.yml` を開き，20行目くらいにある `url` を `https://<GitHub ユーザー名>.github.io` と変更する (GitHub 上で行わず，ローカル環境で行う場合は，加えて `git push` すること)
+5. GitHub Actions が起動し，サイトのデプロイが始まる (4分くらい待つ)
+6. 成功すると，`main` ブランチに加えて，`gh-pages` ブランチが作成される
+7. その後，ブラウザ上で `https://<GitHub ユーザー名>.github.io` にアクセスすると，無事ウェブサイトが完成している(はず)
+
+
+> [!Note]
+> 以下の手順により，自分専用ウェブサイトを完成させてください．<br>
+> そうでないと，「菖蒲迫健介」のウェブサイトがインターネット上に大量生成されてしまいます．．．
 
 ## README を編集する際の注意点
 
@@ -40,33 +74,36 @@
 - その後，`npx prettier . --check` を実行すると，今度はパッケージがないと怒られたので，`npm install` を実行し，現在のディレクトリに `package-lock.json` を追加した (`package.json` に必要な package が書かれてある)
 - そうすると，`npx prettier . --check` が使用可能になり，やはり README の書き方がダメと言われたので，`npx prettier . --write` を実行し，インデントを適当に揃えてもらった
 
-> [!Note]
+> [!Important]
 >
 > - これからは README を編集したら，`npx prettier . --check` を実行し，問題があれば `npx prettier . --write` を実行する
 > - このコマンドにおいては `.` は再帰的に調べてくれるようである
 > - 特定のファイルだけを `--write` したい場合は，上記の `.` にそのファイル名を入れる
 
-## 編集画面をローカルに出力する方法
+## ローカル環境で仮想的にウェブサイトをビルドする
 
 - 以下の手順で `Docker` をインストール
   - [Docker 公式ページ](https://docs.docker.com/get-started/get-docker/) からインストーラーを入手
   - 実行して `Docker` をインストール (1回目はなぜか失敗したので，アンインストールしてもう一度インストールした)
   - `Docker Desktop` がデスクトップに作成されるので起動
-  - 歯車マークから `Resources`，`WSL integration` の順に選択
-  - `Enable integration with my default WSL distro` をオンにし，その下の `Ubuntu` もオンにして設定を保存
-- HPの材料が置いてあるローカルディレクトリに移動して，`docker --version` を実行して，バージョンが出力されたらok
+  - (WSL の場合) 歯車マークから `Resources`，`WSL integration` の順に選択
+  - (WSL の場合) `Enable integration with my default WSL distro` をオンにし，その下の `Ubuntu` もオンにして設定を保存
+- ウェブサイトの材料が置いてあるローカルディレクトリに移動して，`docker --version` を実行して，バージョンが出力されたらok
 - `sudo docker compose pull` を実行して必要な部品をダウンロード
 - `sudo docker compose up` を実行してローカルサーバーを起動
-- Web ブラウザから `http://localhost:8080` にアクセスすると，編集画面が見える
+- Web ブラウザから `http://localhost:8080` もしくは `http://0.0.0.0:8080` にアクセスすると，ビルドされたウェブサイトを見ることができる
 - ローカルサーバーの電源を切るには `ctrl + C` を実行
 
-> [!Note]
+> [!Important]
 >
-> - これからは `Docker Desktop` をクリックして，docker を起動した後，`sudo docker compose up` を実行し，`http://localhost:8080` で編集画面を随時確認
+> - これからは `Docker Desktop` をクリックして，docker を起動した後，`sudo docker compose up` を実行し，`http://localhost:8080` もしくは `http://0.0.0.0:8080` でウェブサイトを随時確認
 > - 編集箇所は自動で反映されるが，ブラウザを再リロードして確認すべし
 
 ## ライトモードを除去してダークモードのみにする
 
+オリジナルの [al-folio](https://github.com/alshedivat/al-folio) には，ダークモードとライトモードの2種類をユーザーが手動で切り替えられるスイッチがナビゲーションバーに存在する．<br>
+
+うっとおしいので，以下により削除した
 - `_sass/themes.scss` ファイルを開く
 - `:root` (ライトモードの配色)を `color-scheme: dark;` (ダークモードの配色)に塗り替える
 - 続いて，`_sass/layout.scss` ファイルを開く
@@ -82,7 +119,7 @@
 
 ## 不必要なファイルたち
 
-元々の [al-folio](https://github.com/alshedivat/al-folio) には，ウェブサイト編集とは無関係なファイル (リポジトリの説明など) が含まれるので，これらを削除した
+オリジナルの [al-folio](https://github.com/alshedivat/al-folio) には，ウェブサイト編集とは無関係なファイル (リポジトリの説明など) が含まれるので，これらを削除した
 
 - `readme_preview/`
 - `.all-contributorsrc`
@@ -94,50 +131,48 @@
 
 ## 必要なファイルたちと説明
 
-以下の「**編集するコンテンツ」以外は基本的に触らないこと**
-| 大区分 | ファイル/フォルダ | 役割 |
-| :--- | :--- | :--- |
-| **編集するコンテンツ** | `_bibliography` | 論文リストのデータ (.bib) を保存する場所 |
-| | `_books` | 読んだ本のリストなど，カスタムコンテンツを保存する場所 |
-| | `_news` | news 項目を保存する場所 |
-| | `pages` | About (Home) や CV など，サイトの固定頁ページを保存する場所 |
-| | `_posts` | blog や news 記事を保存する場所 |
-| | `_projects` | projects のコンテンツを保存する場所 |
-| | `_assets` | サイトで使う画像やファイルを置く場所　|
-| | `README.md` | リポジトリの説明書 |
-| 見た目やルールの設定 | `_data` | SNS リンクなど，サイトで使うデータを管理する場所 |
-| | `_includes` | ヘッダーやフッターなど，再利用される HTML の部品置き場 |
-| | `_layouts` | ページの基本的なレイアウトを定義するテンプレート集 |
-| | `_sass` | サイトの配色，フォントなどを決める CSS の設計図 |
-| | `_config.yml` | サイト全体のタイトルや，種々の機能の ON/OFF などを設定する司令塔 |
-| サイトをビルドするのに必要なもの | `.github` | GitHub Actions (自動デプロイ) の設定ファイル |
-| | `Gemfile` | Jekyll (Ruby) に必要な部品リスト |
-| | `Gemfile.lock` | Jekyll に必要な部品のバージョン記録 |
-| | `package.json` | Prettier (JavaScript) に必要な部品リスト |
-| | `package-lock.json` | Prettier (JavaScript) に必要なバージョン記録 |
-| ローカル開発環境 (Docker) に必要なもの |
-| | `_bin` | Docker コンテナが起動する際の自動実行スクリプト置き場 |
-| | `docker-compose.yml` | `docker compose up` で使用する説明書 |
-| | `docker-compose-slim.yml` | 上記の軽量版 |
-| | `Dockerfile` | Docker イメージ (仮想PC) のレシピ |
-| 無視するリスト | `.dockerignore` | Docker イメージに含めたくないファイルを書く　(`_assets` を消去すること) |
-| | `git-blame-ignore-revs` | git blame コマンドで無視してほしい履歴を指定する |
-| | `.gitignore` | Git に追跡させたくないファイルを書く |
-| | `lycheeignore` | リンク切れチェックツールに，チェックさせたくない URL を書く |
-| 自動生成されるもの | `_site` | Jekyll がサイトをビルドして，完成したウェブサイトが格納される場所 |
-| | `.jekyll-cache` |　Jekyll がサイトをビルドする際の高速化用キャッシュ |
-| | `tweet-cache` | サイトに埋め込んだ tweet の情報を保存しておくキャッシュ |
-| | `lighthouse_results` | サイト性能測定ツールの結果を保存する場所 |
-| | `node_modules` | インストールされた JavaScript 部品が格納される場所 |
-| コード整形ツール | `.pre-commit-config.yaml` | Git コミット前に，Prettier を自動実行するためのチェックリスト |
-| | `.prettierignore` | Prettier の無視リスト |
-| | `prettierrc` | Prettier のルールブック |
-| その他 | `_plugins`, `_scripts` | Jekyll の機能を拡張したり，便利なスクリプトを置いたりする場所 |
-| | `.devcontainer` | VS Code 用の開発環境の設計図 |
-| | `gitattributes` | 改行コードの統一など，Git の挙動を決めるルールブック |
-| | `LICENSE` | ライセンス (消去してはいけない) |
-| | `purgecss.config.js` | 不要な CSS を削減してサイトを高速化するツールの設定ファイル |
-| | `robots.txt` | 検索エンジンロボットへの指示書 |
+| 大区分                                 | ファイル/フォルダ         | 役割                                                                    |
+| :------------------------------------- | :------------------------ | :---------------------------------------------------------------------- |
+| **編集するコンテンツ**                 | `_bibliography`           | 研究業績データ (.bib) を保存する場所                                |
+|                                        | `_books`                  | 読んだ本のリストなど，カスタムコンテンツを保存する場所                  |
+|                                        | `_news`                   | news 項目を保存する場所                                                 |
+|                                        | `_pages`                   | Home や Profile といった固定ページを保存する場所             |
+|                                        | `_posts`                  | blog 記事を保存する場所                                         |
+|                                        | `_projects`               | projects のコンテンツを保存する場所                                     |
+|                                        | `assets`                 | サイトで使う画像やファイルを置く場所　                                  |
+|                                        | `README.md`               | リポジトリの説明書                                                       |
+| | `_data`                   | Profile や SNS リンクなど，サイトで使うデータを管理する場所 |
+| 見た目やルールの設定  |  `_includes`               | ヘッダーやフッターなど，再利用される Liquid ファイルの部品置き場                  |
+|                                        | `_layouts`                | ページの基本的なレイアウトを定義するテンプレート集                      |
+|                                        | `_sass`                   | サイトの配色，フォントなどを決める CSS の設計図                         |
+|                                        | `_config.yml`             | サイト全体のタイトルや，種々の機能の ON/OFF などを設定する司令塔        |
+| サイトをビルドするのに必要なもの       | `.github`                 | GitHub Actions (自動デプロイ) の設定ファイル                            |
+|                                        | `Gemfile`                 | Jekyll (Ruby) に必要な部品リスト                                        |
+|                                        | `Gemfile.lock`            | Jekyll に必要な部品のバージョン記録                                     |
+|                                        | `package.json`            | Prettier (JavaScript) に必要な部品リスト                                |
+|                                        | `package-lock.json`       | Prettier (JavaScript) に必要なバージョン記録                            |
+| ローカル開発環境 (Docker) に必要なもの | `_bin`                    | Docker コンテナが起動する際の自動実行スクリプト置き場                   |
+|                                        | `docker-compose.yml`      | `docker compose up` で使用する説明書                                    |
+|                                        | `docker-compose-slim.yml` | 上記の軽量版                                                            |
+|                                        | `Dockerfile`              | Docker イメージ (仮想PC) のレシピ                                       |
+| 無視するリスト                         | `.dockerignore`           | Docker イメージに含めたくないファイルを書く　(`_assets` を消去すること) |
+|                                        | `git-blame-ignore-revs`   | git blame コマンドで無視してほしい履歴を指定する                        |
+|                                        | `.gitignore`              | Git に追跡させたくないファイルを書く                                    |
+|                                        | `lycheeignore`            | リンク切れチェックツールに，チェックさせたくない URL を書く             |
+| 自動生成されるもの                     | `_site`                   | Jekyll がサイトをビルドして，完成したウェブサイトが格納される場所       |
+|                                        | `.jekyll-cache`           | 　Jekyll がサイトをビルドする際の高速化用キャッシュ                     |
+|                                        | `tweet-cache`             | サイトに埋め込んだ tweet の情報を保存しておくキャッシュ                 |
+|                                        | `lighthouse_results`      | サイト性能測定ツールの結果を保存する場所                                |
+|                                        | `node_modules`            | インストールされた JavaScript 部品が格納される場所                      |
+| コード整形ツール                       | `.pre-commit-config.yaml` | Git コミット前に，Prettier を自動実行するためのチェックリスト           |
+|                                        | `.prettierignore`         | Prettier の無視リスト                                                   |
+|                                        | `prettierrc`              | Prettier のルールブック                                                 |
+| その他                                 | `_plugins`, `_scripts`    | Jekyll の機能を拡張したり，便利なスクリプトを置いたりする場所           |
+|                                        | `.devcontainer`           | VS Code 用の開発環境の設計図                                            |
+|                                        | `gitattributes`           | 改行コードの統一など，Git の挙動を決めるルールブック                    |
+|                                        | `LICENSE`                 | ライセンス (消去してはいけない)                                         |
+|                                        | `purgecss.config.js`      | 不要な CSS を削減してサイトを高速化するツールの設定ファイル             |
+|                                        | `robots.txt`              | 検索エンジンロボットへの指示書                                          |
 
 ## 背景色や文字色を変える方法
 
@@ -149,12 +184,12 @@
 `_config.yml` 最上部の `Site settings` を以下のように変更
 | 項目 | 説明 | すること |
 | :--- | :--- | :--- |
-| `title` | ウェブサイトの名前 | `blank` にすると勝手に名前が入る |
+| `title` | ウェブサイトの名前 (タブ名) | `blank` にすると勝手に名前が入るが，日本語検索で引っ掛かりやすくするために，例えば `菖蒲迫 健介 (Kensuke Shobuzako)` とかにする |
 | `*_name` | 名前 | 自分の名前を入れる (middle name は空欄で良い) |
 | `contact_note` | SNS アイコン郡の下の注釈 | 適当に書く |
 | `description` | サイトの短い説明文 (サイトを共有した時に表示される) | 例：`Official homepage of Kensuke Shobuzako` |
 | `footer_text` | フッターに表示されるクレジット情報 | [フッターの設定方法](#フッターの設定方法) と組み合わせて使う |
-| `keywords` | 検索エンジン向けのキーワード (設定しなくても良い) | 例：`Kensuke Shobuzako, researcher, computational fluid dynamics, particle methods` |
+| `keywords` | 検索エンジン向けのキーワード (設定しなくても良い) | 例：`Kensuke Shobuzako, 菖蒲迫健介, researcher, computational fluid dynamics, particle methods` |
 | `lang` | 言語 | 例：`ja` (日本語) |
 | `icon` | ファビコン (ブラウザタブのアイコン) | 絵文字を直接貼り付ける or 画像 (正方形かつ低ピクセル (64 $\times$ 64)) を `assets/img/` 内に設置し，その画像名を `_config.yml` の `icon:` 以下で指定 (自分は [Phosphor](https://phosphoricons.com/) からアイコンを取得) |
 | `url` | サイトのURL | 自分の GitHub Pages の URL を書く |
@@ -194,15 +229,7 @@
 ```
 
 - `{{ }}` で囲まれた部分が引数になっており，`_config.yml` で設定した `footer_text` は `{{ site.footer_text }}` に代入される
-- これらを以下のように書き直した
-
-```
-footer_text: >
-Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme
-(<a href="https://github.com/shobuzako-kensuke/shobuzako-kensuke.github.io" target="_blank">my adaptation</a>).
-Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-Icon by <a href="https://phosphoricons.com/" target="_blank">Phosphor</a>.
-```
+- これを以下のように書き直した
 
 ```
 {% capture footer_contents %}
@@ -220,51 +247,33 @@ Icon by <a href="https://phosphoricons.com/" target="_blank">Phosphor</a>.
 {% endcapture %}
 ```
 
-- 主な変更点は以下
-  - "Powered by ~" に "(my adaptation)" を入れたこと
-  - %copy; Copyright "2025" と手で書いたこと
-  - `<br>` を追加して改行したこと
-  - "Icon by Phosphor." を追記したこと
-
 > [!Note]
 > 可愛いアイコン (ファビコン) がある場所：[https://phosphoricons.com/](https://phosphoricons.com/)
+
+## ナビゲーションバーの設定
+
+現在のナビゲーションバーの設定は以下の通り．
+
+- Home
+- Profile
+- Research
+  - Projects
+  - Publications
+  - Presentations
+- Works
+  - Software
+  - Articles
+  - Research Notes
+- News
+- Blog
+
+なお，オリジナルの [al-folio](https://github.com/alshedivat/al-folio) では，他に様々なコンテンツが用意されているので，これらは削除せず，単に非表示にしている．<br>
+ナビゲーションバーの表示・非表示をいじりたい場合は，`_pages/*.md` に書いてあるフロントマター (---で囲まれた領域) の `nav: true` や `nav_order: *` を適宜変更すれば良い．
+
 
 ## Home の編集
 
 `_pages/about.md` が主な編集場所．最初に書かれているフロントマターと呼ばれる部分 (`---` で囲まれた部分) をいじることで，設定を変更可能．
-
-自分で手を加えた後の設定は以下の通り．
-
-```
----
-layout: about # _layouts/about.html というレイアウトを使用
-title: Home   # このページのタイトル (ナビゲーションバーに表示される)
-permalink: /  # このページの URL をトップに設定
-subtitle: Official homepage # タイトルの下に表示されるサブタイトルのテキスト
-
-profile:  # プロフィールの設定
-  align: right  # プロフィール画像を右側に配置
-  image: profile_pic.png  # プロフィール画像は assets/img/ に設置
-  image_circular: False # true にするとプロフィール画像が円になる
-  # more_info: >  # プロフィール画像の下に表示する住所
-  #   <p>555 your office number</p>
-  #   <p>123 your address street</p>
-  #   <p>Your City, State 12345</p>
-
-selected_papers: true # true にすると「Selected Papers」が追加される
-social: true # true にすると SNS アイコンが表示される
-
-announcements:  # お知らせ (_news) フォルダの内容の設定
-  enabled: true # true にすると，「news」が表示される
-  scrollable: true # true にすると，「news」が3件以上ある場合に，スクロールバーが表示される
-  limit: 5 # 「news」に表示する件数を最大で5件にする
-
-latest_posts:  # 最新ブログ記事 (_posts 内) の設定
-  enabled: False  # true にすると，表示される
-  scrollable: true # true にすると，「latest posts」が3件以上ある場合に，スクロールバーが表示される
-  limit: 3 # 「latest posts」に表示する件数を最大で3件にする
----
-```
 
 > [!Note]
 >
@@ -282,4 +291,65 @@ latest_posts:  # 最新ブログ記事 (_posts 内) の設定
 
 - 基本設定は `_pages/cv.md` で行う
 - 内容の編集は `assets/json/resume.json` で行う
-- レイアウトの設定は `_layouts/cv.liquid` で行う
+- Profile 画面のレイアウトの設定は `_layouts/cv.liquid` で行う
+- 各内容のレイアウトの設定は `_includes/resume/*.liquid` で個別に行う
+
+
+## Research/Projects の編集
+
+- 基本設定は `_pages/projects.md` で行う
+- 具体的なプロジェクト内容は `_projects/` の中にマークダウンファイル (`.md`) を作成して書き込む
+- `category` 毎に分別される
+
+## Research/Publications と Research/Presentations の編集
+
+準備：`_config.yml` ファイルの `Jekyll Scholar` というセクションを検索した後，`scholar:` で自分の名前を入力しておく (これにより自分の名前がハイライトされる)．
+
+- 基本設定は `_pages/publications.md` および `_pages/presentations.md` で行う
+- 具体的な業績等は，`_bibliography` ディレクトリ内部の bib ファイルを編集する
+- 新たに bib ファイルを追加することも可能で，その場合は上記の基本設定で呼び出すことを忘れずに
+- bib ファイルで指定可能なカスタム変数のメモ：
+  - `abbr` : 略称バナーの設定 (`_data/venues.yml` で設定)
+  - `selected = {true}` : 主要論文としてマークし，Home に表示
+  - `preview` : 論文横に表示される画像 (`assets/img/publication_preview` に設置)
+
+
+## Works/Software の編集
+
+- 基本設定は `_pages/software.md` で行う
+- ユーザー名やリポジトリ名は `_data/repositories.yml` で編集する
+- 複数のユーザー名を登録可能
+- デフォルトではトロフィー機能が有効になっているが，煩わしいので，以下の手順により非表示にした
+  - `_config.yml` より `repo_trophies:` を検索
+  - `enabled: true` を `false` に変更
+  
+## Works/Article と Works/Research_Notes の編集
+
+- 編集は `_pages/articles.md` もしくは `_pages/research_notes.md` で行う
+- これらは自分が新しく加えたファイルで，例えば，講義ノート (`lecture_notes`) を新たに加えることも可能
+  - その場合は，`_pages/works.md` のフロントマターに追加することを忘れずに
+- 本リポジトリに記事やノートの pdf ファイルを直接置いても良いが，容量が大きくなる可能性があるので，自分は google ドライブに置いて，その公開リンクを張り付けた
+
+## News の編集
+
+- 基本設定は `_pages/news.md` で行う
+- 具体的な内容は `_news` ディレクトリに，各ニュース毎のマークダウンファイル (`.md`) を作成して，そこに書く
+- ただし，各ファイル名は作成日とタイトルを合わせた形式 (`YYYY-MM-DD-title.md`) で書く
+- 各ファイル上部にあるフロントマター (`---`で囲まれた場所) の `inline` は 
+  - `false` にするとタイトルのみ表示される (ニュースが長い場合に有効)
+  - `true` にすると全文が表示される
+
+## Blog の編集
+
+- 基本設定は `_config.yml` の `Blog` と `Jekyll Archives` の部分および `_pages/blog.md` で行う
+- ただし，`_pages/blog.md` については，フロントマター以外は触らなくて良い
+- 具体的な内容は `_posts` ディレクトリにマークダウンファイル (`.md`) を作成して，そこに書く
+- ただし，各ファイル名は作成日とタイトルを合わせた形式 (`YYYY-MM-DD-title.md`) で書く
+- 自分へのメモ：表の具体的な項目内容は `assets/json/` 以下に保存する
+
+## Google [サーチコンソール](https://search.google.com/search-console/about?hl=ja) と [アナリティクス](https://developers.google.com/analytics?hl=ja) と への登録
+
+- [Google サーチコンソール](https://search.google.com/search-console/about?hl=ja)とは，「どのような検索キーワードで何回表示され，何回クリックされたか」を記録してくれる無料のツール
+- [Google アナリティクス](https://developers.google.com/analytics?hl=ja) とは，「ウェブサイトを訪問した人がサイト内で何をしたか」を記録してくれる無料ツール
+- 特に，前者は [Google クローラー](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=ja) にウェブサイトの URL をリクエストして，検索エンジンへの登録を催促できる
+- 登録方法は以下の通り (Google アカウントが必要)．

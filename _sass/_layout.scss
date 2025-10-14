@@ -99,3 +99,25 @@ body.sticky-bottom-footer {
 .en-text {
   color: #99a1a8;
 }
+
+/* ----- Awardバナーのカスタムスタイル ----- */
+.publications .links a.award {
+  background-color: var(--global-theme-color);
+  color: #000000 !important;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--global-theme-color) !important;
+  }
+}
+
+/* ----- 業績ページおよびArticlesページのリスト間の余白を調整 ----- */
+.publications ol.bibliography > li {
+  padding-bottom: 1rem; /* ← 各リスト項目の下に余白を追加 */
+}
+
+/* ----- Notesページのタイトルをテーマカラーにする ----- */
+.publications .title {
+  color: var(--global-theme-color);
+  font-weight: bold;
+}

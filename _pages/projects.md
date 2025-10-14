@@ -1,13 +1,16 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
-nav: true
-nav_order: 3
-display_categories: [work, fun]
+title: Projects
+permalink: /research/projects/
+description: 研究プロジェクト (工事中)
+nav: false
+# nav_order: 3
+nav_parent: Research
+display_categories: [Particle Methods, Planetary Sciences, Engineering Applications]
 horizontal: false
 ---
+
+<!-- これより下は基本的にいじらない -->
 
 <!-- pages/projects.md -->
 <div class="projects">
