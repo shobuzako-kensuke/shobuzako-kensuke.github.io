@@ -375,7 +375,8 @@
 
 ### データが反映されてからすること
 
-- ウェブサイトの全ページリストを Google に渡して，検索エンジンに各ページのクロールを促す
-  - 手順：Google Search Console のメニューから「インデックス作成」-> 「サイトマップ」を選択し，「新しいサイトマップの追加」の入力欄に `sitemap.xml` と入力し送信
-- Google Analytics と Search Console を連携させる
+<!-- - ウェブサイトの全ページリストを Google に渡して，検索エンジンに各ページのクロールを促す
+  - 手順：Google Search Console のメニューから「インデックス作成」-> 「サイトマップ」を選択し，「新しいサイトマップの追加」の入力欄に `sitemap.xml` と入力し送信 -->
+
+- Google Analytics と Search Console を連携させる (別にしなくても良い)
   - Google Analytics 上で「管理」 -> 「サービス間のリンク設定」 -> 「Search Console のリンク」と進み，適切なプロパティを選択する
