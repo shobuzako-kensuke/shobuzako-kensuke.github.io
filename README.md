@@ -4,10 +4,13 @@
 - ただし，日本語ウェブサイト用に改変
 - 環境は Windows 11 ( [WSL2](https://qiita.com/zakoken/items/61141df6aeae9e3f8e36) を使用)
 
-## 目次
+> [!Warning]
+> 本リポジトリを `fork` して，ウェブサイトとして運用する場合は，以下の全ての手順を実行し，私のプロフィールに関する箇所を全て修正してから公開してください．
+> 修正漏れがあると **_Kensuke Shobuzako_** のウェブサイトとして，公開されてしまう恐れがあります．
+
+**目次**
 
 - [Personal Website powered by a Japanese version of al-folio](#personal-website-powered-by-a-japanese-version-of-al-folio)
-  - [目次](#目次)
   - [al-folio ウェブサイトの基本](#al-folio-ウェブサイトの基本)
   - [インストール手順](#インストール手順)
   - [README を編集する際の注意点](#readme-を編集する際の注意点)
@@ -35,17 +38,18 @@
 
 ## [al-folio](https://github.com/alshedivat/al-folio) ウェブサイトの基本
 
-- **コンテンツ作成**：Markdown (`.md`)，データファイル (`.yml`, `.json`, `.bib`) を編集する
+- **コンテンツ作成**：Markdown (`.md`) や，データファイル (`.yml`, `.json`, `.bib`) を編集する
 - **デザイン変更**：
-  - `_includes` や `_layout` ディレクトリに含まれる `.liquid` ファイルを編集する (構造)
-  - `_sass` ディレクトリに含まれる `.scss` ファイルを編集する (見た目)
+  - 構造：`_includes` や `_layout` ディレクトリに含まれる `.liquid` ファイルを編集する
+  - 見た目：`_sass` ディレクトリに含まれる `.scss` ファイルを編集する
 - **ビルド**：これらの部品は [Jekyll](https://jekyllrb-ja.github.io/) と呼ばれるツールを通じて，一連の html ファイルを生成する
 - **ローカルプレビュー**：[Docker](https://www.docker.com/ja-jp/) (`docker compose up`) により，公開前に内容を確認できる
-- **デプロイ (サーバー上にデータを置き，利用可能な状態にすること)**：`git push` などにより GitHub にデータがアップロードされると [GitHub Actions](https://github.co.jp/features/actions) により，Jekyll が自動的に呼び出されてウェブサイトのビルドが始まる
-- **公開**：そうして出来上がったウェブサイト (`_site` ディレクトリの中身)は，`gh-pages` ブランチに書き込まれ，[GitHub Pages](https://docs.github.com/ja/pages) を通じてインターネット上に公開される
+- **デプロイ**：`git push` などにより GitHub にデータがアップロードされると [GitHub Actions](https://github.co.jp/features/actions) により，Jekyll が自動的に呼び出されてウェブサイトのビルドが始まる
+- **公開**：出来上がったウェブサイト (`_site` ディレクトリの中身)は，`gh-pages` ブランチに書き込まれ，[GitHub Pages](https://docs.github.com/ja/pages) を通じてインターネット上に公開される
 
 > [!Note]
 >
+> - デプロイとは，サーバー上にデータを置き，利用可能な状態にすること
 > - `.liquid` は Jekyll によって呼び出され，静的な html ファイルを生成する
 > - VS Code において，liquid ファイルのおすすめ拡張機能は `Shopify Liquid`
 
@@ -59,11 +63,7 @@
 4. `Fork` したリポジトリ内の `_config.yml` を開き，20行目くらいにある `url` を `https://<GitHub ユーザー名>.github.io` と変更する (GitHub 上で行わず，ローカル環境で行う場合は，加えて `git push` すること)
 5. GitHub Actions が起動し，サイトのデプロイが始まる (4分くらい待つ)
 6. 成功すると，`main` ブランチに加えて，`gh-pages` ブランチが作成される
-7. その後，ブラウザ上で `https://<GitHub ユーザー名>.github.io` にアクセスすると，無事ウェブサイトが完成している(はず)
-
-> [!Note]
-> 以下の手順により，自分専用ウェブサイトを完成させてください．<br>
-> そうでないと，「菖蒲迫健介」のウェブサイトがインターネット上に大量生成されてしまいます．．．
+7. その後，ブラウザ上で `https://<GitHub ユーザー名>.github.io` にアクセスすると，無事ウェブサイトが完成している (はず)
 
 ## README を編集する際の注意点
 
@@ -359,7 +359,7 @@
 6. 自分のウェブサイトに移動し，`_config.yml` を開き，`Analytics and search engine verification` セクションを検索後，`google_site_verification` の部分に，コピーした文字列を張り付ける
 7. 続いて，`_config.yml` で `Optional Features` セクションを検索し，`enable_google_verification:` の値を `true` にする
 8. [Google Analytics](https://developers.google.com/analytics?hl=ja) に先ほどと同じ Google アカウントでログインする
-9. 左側のメニューから **歯車マーク**の「管理」を選択
+9. 左側のメニューから **歯車マーク**の「管理」を
 10. 上の方にある「作成」から「プロパティ」を選択し，`プロパティ名` (例：`個人用ウェブサイト`)，`タイムゾーン` (例：`日本`)，`通貨` (例：`日本円`) を設定する
 11. 「ビジネスの説明」および「ビジネス目標」は適当に選択
 12. 「データの収集」では「ウェブ」を選択し，ウェブサイトの URL (例：`https://<GitHub ユーザー名>.github.io`) を入力 ( 「ストリート名」は適当に入力)

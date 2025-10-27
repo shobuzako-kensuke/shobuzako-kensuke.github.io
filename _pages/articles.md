@@ -14,6 +14,26 @@ nav_parent: Works
 
   <h3 class="mt-4">2025年</h3>
   <ol class="bibliography">
+    <li>
+      <div class="row">
+        <div class="col-sm-1 abbr">
+          <abbr class="badge" style="background-color: #55C500;"><a href="https://qiita.com/" target="_blank" style="color: #000000;">Qiita</a></abbr>
+        </div>
+        <div class="col-sm-11">
+          <div class="title"><a href="https://qiita.com/zakoken/items/182c76e2d2ed2914bbe9" target="_blank">WSL2 上のファイルを VS Code で編集して Git および GitHub と連携させる</a></div>
+          <div class="periodical">
+            <em>作成日: 2025年10月20日</em>
+          </div>
+          <div class="links">
+            <span class="badge" style="background-color:#6c757d;">閲覧数: 426</span>
+            <span class="badge" style="background-color:#6c757d;">技術記事</span>
+          </div>
+          <div class="summary">
+            <a href="https://learn.microsoft.com/ja-jp/windows/wsl/about" target="_blank">WSL2</a> 上のファイルを <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code (VS Code)</a> 上で編集して，<a href="https://git-scm.com/" target="_blank">Git</a> および <a href="https://github.co.jp/" target="_blank">GitHub</a> を用いてバージョン管理する方法をまとめました．
+          </div>
+        </div>
+      </div>
+    </li>
   </ol>
 
   <hr class="mt-5">
@@ -66,7 +86,7 @@ nav_parent: Works
           <abbr class="badge" style="background-color: #55C500;"><a href="https://qiita.com/" target="_blank" style="color: #000000;">Qiita</a></abbr>
         </div>
         <div class="col-sm-11">
-          <div class="title"><a href="https://qiita.com/zakoken/items/880bcf9cf9eb71dedae8" target="_blank">WSL2上でインストールした LaTeX を VS Code で動かす</a></div>
+          <div class="title"><a href="https://qiita.com/zakoken/items/880bcf9cf9eb71dedae8" target="_blank">WSL2 上でインストールした LaTeX を VS Code で動かす</a></div>
           <div class="periodical">
             <em>作成日: 2024年3月14日</em>
           </div>
@@ -86,7 +106,7 @@ nav_parent: Works
           <abbr class="badge" style="background-color: #55C500;"><a href="https://qiita.com/" target="_blank" style="color: #000000;">Qiita</a></abbr>
         </div>
         <div class="col-sm-11">
-          <div class="title"><a href="https://qiita.com/zakoken/items/8ddfda7267e7d95b3c46" target="_blank">WSL2による Python3 の環境構築</a></div>
+          <div class="title"><a href="https://qiita.com/zakoken/items/8ddfda7267e7d95b3c46" target="_blank">WSL2 による Python3 の環境構築</a></div>
           <div class="periodical">
             <em>作成日: 2024年3月13日</em>
           </div>
@@ -106,7 +126,7 @@ nav_parent: Works
           <abbr class="badge" style="background-color: #55C500;"><a href="https://qiita.com/" target="_blank" style="color: #000000;">Qiita</a></abbr>
         </div>
         <div class="col-sm-11">
-          <div class="title"><a href="https://qiita.com/zakoken/items/2a5e629020ce68f3efe1" target="_blank">WSL2による gfortran と intel fortran の環境構築</a></div>
+          <div class="title"><a href="https://qiita.com/zakoken/items/2a5e629020ce68f3efe1" target="_blank">WSL2 による gfortran と intel fortran の環境構築</a></div>
           <div class="periodical">
             <em>作成日: 2024年3月13日</em>
           </div>
@@ -126,7 +146,7 @@ nav_parent: Works
           <abbr class="badge" style="background-color: #55C500;"><a href="https://qiita.com/" target="_blank" style="color: #000000;">Qiita</a></abbr>
         </div>
         <div class="col-sm-11">
-          <div class="title"><a href="https://qiita.com/zakoken/items/61141df6aeae9e3f8e36" target="_blank">WSL2のインストールとアンインストール</a></div>
+          <div class="title"><a href="https://qiita.com/zakoken/items/61141df6aeae9e3f8e36" target="_blank">WSL2 のインストールとアンインストール</a></div>
           <div class="periodical">
             <em>作成日: 2024年3月13日</em>
           </div>

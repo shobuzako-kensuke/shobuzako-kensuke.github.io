@@ -27,12 +27,12 @@ latest_posts: # 最新ブログ記事 (_posts 内) の設定
   limit: 3 # 「latest posts」に表示する件数を最大で3件にする
 ---
 
-**○ 所属 <span class="en-text">/ Affiliation</span>**<br>
+**○ 所属 <span class="en-text">/ Affiliation</span>**
 
-- [九州大学](https://www.kyushu-u.ac.jp/ja/) [大学院理学府](https://www.sci.kyushu-u.ac.jp/) [地球惑星科学専攻](https://www.geo.kyushu-u.ac.jp/)<br>
-  [地球内部ダイナミクス研究室 博士後期課程3年](http://dyna.geo.kyushu-u.ac.jp/)<br>
-  <span class="en-text">PhD Student, Department of Earth and Planetary Sciences, <br>
-  Graduate School of Science, Kyushu University</span>
+[九州大学](https://www.kyushu-u.ac.jp/ja/) [大学院理学府](https://www.sci.kyushu-u.ac.jp/) [地球惑星科学専攻](https://www.geo.kyushu-u.ac.jp/)<br>
+[地球内部ダイナミクス研究室 博士後期課程3年](http://dyna.geo.kyushu-u.ac.jp/)<br>
+<span class="en-text">PhD Student, Department of Earth and Planetary Sciences, <br>
+Graduate School of Science, Kyushu University</span>
 
 {: .extra-margin-top }
 
@@ -48,7 +48,6 @@ latest_posts: # 最新ブログ記事 (_posts 内) の設定
 
 **○ 今後の予定 <span class="en-text">/ Upcoming Schedule</span>**<br>
 
-- 2025/10/23：研究室セミナー発表 (請求発表会の練習)
 - 2025/10/31：博士学位請求論文発表会
 
 {: .extra-margin-top }
