@@ -62,9 +62,12 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+      <h2 style="font-weight: 500;">
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">ニュース</a>
       </h2>
+      <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0.8rem; font-weight: 500;">
+        <i class="fa-solid fa-arrow-pointer fa-fw"></i>各項目をクリックして詳細を表示
+      </p>
       {% include news.liquid limit=true %}
     {% endif %}
 

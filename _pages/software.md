@@ -5,14 +5,14 @@ title: Software
 description: 開発したソフトウェア
 nav: false
 # nav_order: 4
-nav_parent: Works
+nav_parent: 資料
 ---
 
 <hr class="mt-5">
 
 {% if site.data.repositories.github_users %}
 
-## GitHub users
+<h3 style="font-weight: 500;">GitHub users</h3>
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
@@ -40,7 +40,7 @@ nav_parent: Works
 
 {% if site.data.repositories.github_repos %}
 
-## GitHub Repositories
+<h3 style="font-weight: 500;">GitHub Repositories</h3>
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}

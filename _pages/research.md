@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Research
+title: 研究
 permalink: /research/
 nav: true
 nav_order: 2
 dropdown: true
 children:
-  - title: Projects
+  - title: 研究内容
     permalink: /research/projects/
-  - title: Publications
+  - title: 出版物リスト
     permalink: /research/publications/
-  - title: Presentations
+  - title: 発表リスト
     permalink: /research/presentations/
 ---

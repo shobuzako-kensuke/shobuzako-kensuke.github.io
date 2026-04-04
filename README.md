@@ -5,8 +5,9 @@
 - 環境は Windows 11 ( [WSL2](https://qiita.com/zakoken/items/61141df6aeae9e3f8e36) を使用)
 
 > [!Warning]
-> 本リポジトリを `fork` して，ウェブサイトとして運用する場合は，以下の全ての手順を実行し，私のプロフィールに関する箇所を全て修正してから公開してください．
-> 修正漏れがあると **_Kensuke Shobuzako_** のウェブサイトとして，公開されてしまう恐れがあります．
+>
+> - 本ウェブサイトを利用する場合は，以下の全ての手順を実行し，私のプロフィールに関する箇所を全て修正してから公開してください．<br>
+> - 修正漏れがあると **_Kensuke Shobuzako_** のウェブサイトとして，公開されてしまう恐れがあります．
 
 **目次**
 
@@ -15,7 +16,7 @@
   - [インストール手順](#インストール手順)
   - [README を編集する際の注意点](#readme-を編集する際の注意点)
   - [ローカル環境で仮想的にウェブサイトをビルドする](#ローカル環境で仮想的にウェブサイトをビルドする)
-  - [ライトモードを除去してダークモードのみにする](#ライトモードを除去してダークモードのみにする)
+  - [~~ライトモードを除去してダークモードのみにする~~（2026/3/13変更）](#ライトモードを除去してダークモードのみにする2026313変更)
   - [不必要なファイルたち](#不必要なファイルたち)
   - [必要なファイルたちと説明](#必要なファイルたちと説明)
   - [背景色や文字色を変える方法](#背景色や文字色を変える方法)
@@ -24,15 +25,15 @@
     - [フッターを固定する](#フッターを固定する)
     - [フッターを編集する](#フッターを編集する)
   - [ナビゲーションバーの設定](#ナビゲーションバーの設定)
-  - [Home の編集](#home-の編集)
-    - [SNS リンク (アイコン) の設定](#sns-リンク-アイコン-の設定)
-  - [Profile の編集](#profile-の編集)
-  - [Research/Projects の編集](#researchprojects-の編集)
-  - [Research/Publications と Research/Presentations の編集](#researchpublications-と-researchpresentations-の編集)
-  - [Works/Software の編集](#workssoftware-の編集)
-  - [Works/Article と Works/Research_Notes の編集](#worksarticle-と-worksresearch_notes-の編集)
-  - [News の編集](#news-の編集)
-  - [Blog の編集](#blog-の編集)
+  - [ホーム の編集](#ホーム-の編集)
+    - [~~SNS リンク (アイコン) の設定~~（2026/3/15変更）](#sns-リンク-アイコン-の設定2026315変更)
+  - [プロフィール の編集（2026/3/16変更）](#プロフィール-の編集2026316変更)
+  - [研究/研究内容 の編集 (2026/3/17変更)](#研究研究内容-の編集-2026317変更)
+  - [研究/論文リスト と 発表リスト の編集 (2026/3/17変更)](#研究論文リスト-と-発表リスト-の編集-2026317変更)
+  - [資料/ソフトウェア の編集](#資料ソフトウェア-の編集)
+  - [資料/Web記事 と 資料/ノート の編集](#資料web記事-と-資料ノート-の編集)
+  - [ニュース の編集](#ニュース-の編集)
+  - [ブログ の編集](#ブログ-の編集)
   - [Google サーチコンソール と アナリティクス への登録](#google-サーチコンソール-と-アナリティクス-への登録)
     - [データが反映されてからすること](#データが反映されてからすること)
 
@@ -98,11 +99,14 @@
 > - これからは `Docker Desktop` をクリックして，docker を起動した後，`sudo docker compose up` を実行し，`http://localhost:8080` もしくは `http://0.0.0.0:8080` でウェブサイトを随時確認
 > - 編集箇所は自動で反映されるが，ブラウザを再リロードして確認すべし
 
-## ライトモードを除去してダークモードのみにする
+## ~~ライトモードを除去してダークモードのみにする~~（2026/3/13変更）
 
-オリジナルの [al-folio](https://github.com/alshedivat/al-folio) には，ダークモードとライトモードの2種類をユーザーが手動で切り替えられるスイッチがナビゲーションバーに存在する．<br>
+> [!Note]
+> 2026/3/13: オリジナルの設定に戻した
 
-うっとおしいので，以下により削除した
+~~オリジナルの [al-folio](https://github.com/alshedivat/al-folio) には，ダークモードとライトモードの2種類をユーザーが手動で切り替えられるスイッチがナビゲーションバーに存在する．<br>~~
+
+~~うっとおしいので，以下により削除した~~
 
 - `_sass/themes.scss` ファイルを開く
 - `:root` (ライトモードの配色)を `color-scheme: dark;` (ダークモードの配色)に塗り替える
@@ -254,23 +258,23 @@
 
 現在のナビゲーションバーの設定は以下の通り．
 
-- Home
-- Profile
-- Research
-  - Projects
-  - Publications
-  - Presentations
-- Works
-  - Software
-  - Articles
-  - Research Notes
-- News
-- Blog
+- Home（ホーム）
+- Profile（プロフィール）
+- Research（研究）
+  - Projects（研究内容）
+  - Publications（出版物リスト）
+  - Presentations（発表リスト）
+- Works（資料）
+  - Software（ソフトウェア）
+  - Articles（Web記事）
+  - Research Notes（ノート）
+- News（ニュース）
+- Blog（ブログ）
 
 なお，オリジナルの [al-folio](https://github.com/alshedivat/al-folio) では，他に様々なコンテンツが用意されているので，これらは削除せず，単に非表示にしている．<br>
 ナビゲーションバーの表示・非表示をいじりたい場合は，`_pages/*.md` に書いてあるフロントマター (---で囲まれた領域) の `nav: true` や `nav_order: *` を適宜変更すれば良い．
 
-## Home の編集
+## ホーム の編集
 
 `_pages/about.md` が主な編集場所．最初に書かれているフロントマターと呼ばれる部分 (`---` で囲まれた部分) をいじることで，設定を変更可能．
 
@@ -278,28 +282,47 @@
 >
 > - レイアウトを変更するには `_layout/about.html` を編集する必要あり
 > - 詳しくは書かないが，色々いじっている
+> - なお，英語版は `_pages/about_en.md` を編集すること
 
-### SNS リンク (アイコン) の設定
+### ~~SNS リンク (アイコン) の設定~~（2026/3/15変更）
+
+> [!Note]
+> 2026/3/15: リサーチマップのアイコンがないので手動に変更
 
 - 作業場所は `_data/socials.yml` と `_includes/social.liquid`
 - 前者で URL などを設定
 - 後者でアイコンを指定できるが，ここではデフォルト設定のまま
 - 自分は `_sass/_layout.scss` を編集して SNS アイコンの位置を上部に設置
 
-## Profile の編集
+## プロフィール の編集（2026/3/16変更）
+
+> [!Note]
+>
+> - 2026/3/16: オリジナルの仕様はブラックボックスが多く煩雑なので，`layout: page` にして自由に書けるようにした
+> - 今後は `_pages/cv.md` を編集すること
 
 - 基本設定は `_pages/cv.md` で行う
 - 内容の編集は `assets/json/resume.json` で行う
 - Profile 画面のレイアウトの設定は `_layouts/cv.liquid` で行う
 - 各内容のレイアウトの設定は `_includes/resume/*.liquid` で個別に行う
 
-## Research/Projects の編集
+## 研究/研究内容 の編集 (2026/3/17変更)
+
+> [!Note]
+>
+> - 2026/3/17: オリジナルの仕様はブラックボックスが多く煩雑なので，`layout: page` にして自由に書けるようにした
+> - 今後は `_pages/projects.md` を編集すること
 
 - 基本設定は `_pages/projects.md` で行う
 - 具体的なプロジェクト内容は `_projects/` の中にマークダウンファイル (`.md`) を作成して書き込む
 - `category` 毎に分別される
 
-## Research/Publications と Research/Presentations の編集
+## 研究/論文リスト と 発表リスト の編集 (2026/3/17変更)
+
+> [!Note]
+>
+> - 2026/3/17: オリジナルの仕様はブラックボックスが多く煩雑なので，`layout: page` にして自由に書けるようにした
+> - 今後は `_pages/presentation.md` および `_pages/publications.md` を編集すること
 
 準備：`_config.yml` ファイルの `Jekyll Scholar` というセクションを検索した後，`scholar:` で自分の名前を入力しておく (これにより自分の名前がハイライトされる)．
 
@@ -311,7 +334,7 @@
   - `selected = {true}` : 主要論文としてマークし，Home に表示
   - `preview` : 論文横に表示される画像 (`assets/img/publication_preview` に設置)
 
-## Works/Software の編集
+## 資料/ソフトウェア の編集
 
 - 基本設定は `_pages/software.md` で行う
 - ユーザー名やリポジトリ名は `_data/repositories.yml` で編集する
@@ -320,14 +343,14 @@
   - `_config.yml` より `repo_trophies:` を検索
   - `enabled: true` を `false` に変更
 
-## Works/Article と Works/Research_Notes の編集
+## 資料/Web記事 と 資料/ノート の編集
 
 - 編集は `_pages/articles.md` もしくは `_pages/research_notes.md` で行う
 - これらは自分が新しく加えたファイルで，例えば，講義ノート (`lecture_notes`) を新たに加えることも可能
   - その場合は，`_pages/works.md` のフロントマターに追加することを忘れずに
 - 本リポジトリに記事やノートの pdf ファイルを直接置いても良いが，容量が大きくなる可能性があるので，自分は google ドライブに置いて，その公開リンクを張り付けた
 
-## News の編集
+## ニュース の編集
 
 - 基本設定は `_pages/news.md` で行う
 - 具体的な内容は `_news` ディレクトリに，各ニュース毎のマークダウンファイル (`.md`) を作成して，そこに書く
@@ -336,13 +359,13 @@
   - `false` にするとタイトルのみ表示される (ニュースが長い場合に有効)
   - `true` にすると全文が表示される
 
-## Blog の編集
+## ブログ の編集
 
 - 基本設定は `_config.yml` の `Blog` と `Jekyll Archives` の部分および `_pages/blog.md` で行う
 - ただし，`_pages/blog.md` については，フロントマター以外は触らなくて良い
 - 具体的な内容は `_posts` ディレクトリにマークダウンファイル (`.md`) を作成して，そこに書く
 - ただし，各ファイル名は作成日とタイトルを合わせた形式 (`YYYY-MM-DD-title.md`) で書く
-- 自分へのメモ：表の具体的な項目内容は `assets/json/` 以下に保存する
+- ~~自分へのメモ：表の具体的な項目内容は`assets/json/`以下に保存する~~
 
 ## Google [サーチコンソール](https://search.google.com/search-console/about?hl=ja) と [アナリティクス](https://developers.google.com/analytics?hl=ja) への登録
 

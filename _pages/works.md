@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Works
+title: 資料
 permalink: /works/
 nav: true
 nav_order: 3
 dropdown: true
 children:
-  - title: Software
+  - title: ソフトウェア
     permalink: /works/software/
-  - title: Articles
+  - title: Web記事
     permalink: /works/articles/
-  - title: Research Notes
+  - title: ノート
     permalink: /works/research_notes/
 ---

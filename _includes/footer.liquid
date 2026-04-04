@@ -1,5 +1,5 @@
 {% capture footer_contents %}
-  &copy; Copyright 2025
+  &copy; 2025–2026
   {{ site.first_name }}
   {{ site.middle_name }}
   {{ site.last_name }}.<br>
@@ -8,7 +8,7 @@
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
   {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+    Last updated: {{ 'now' | date: '%Y/%m/%d' }}.
   {% endif %}
 {% endcapture %}
 

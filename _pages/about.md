@@ -1,11 +1,11 @@
 ---
 layout: about # _layouts/about.html というレイアウトを使用
-title: Home # このページのタイトル (ナビゲーションバーに表示される)
+title: ホーム # このページのタイトル (ナビゲーションバーに表示される)
 permalink: / # このページの URL をトップに設定
-subtitle: 菖蒲迫 健介のホームページへようこそ # タイトルの下に表示されるサブタイトルのテキスト
+subtitle: "<span style='font-weight: 400;'>菖蒲迫 健介　|　粒子法 (SPH法) を用いた流体シミュレーション屋</span>" # タイトルの下に表示されるサブタイトルのテキスト
 
 profile: # プロフィールの設定
-  align: right # プロフィール画像を右側に配置
+  align: left # プロフィール画像を右側に配置
   image: profile_pic.png # プロフィール画像は assets/img/ に設置
   image_circular: false # true にするとプロフィール画像が円になる
   # more_info: >  # プロフィール画像の下に表示する住所
@@ -13,13 +13,13 @@ profile: # プロフィールの設定
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
 
-selected_papers: true # true にすると「Selected Papers」が追加される
-social: true # true にすると SNS アイコンが表示される
+selected_papers: false # true にすると「Selected Papers」が追加される
+social: false # true にすると SNS アイコンが表示される
 
 announcements: # お知らせ (_news) フォルダの内容の設定
   enabled: true # true にすると，「news」が表示される
   scrollable: true # true にすると，「news」が以下のlimit件数以上ある場合に，スクロールバーが表示される
-  limit: 5 # 「news」に表示する件数を最大で5件にする
+  limit: 10 # 「news」に表示する件数を最大で10件にする
 
 latest_posts: # 最新ブログ記事 (_posts 内) の設定
   enabled: false # true にすると，表示される
@@ -27,31 +27,92 @@ latest_posts: # 最新ブログ記事 (_posts 内) の設定
   limit: 3 # 「latest posts」に表示する件数を最大で3件にする
 ---
 
-**○ 所属 <span class="en-text">/ Affiliation</span>**
+<p style="font-size: 1.05rem; margin-bottom: 1.0rem; font-weight: 500;">
+  東京大学 大学院工学系研究科 社会基盤学専攻 特任研究員
+</p>
 
-[九州大学](https://www.kyushu-u.ac.jp/ja/) [大学院理学府](https://www.sci.kyushu-u.ac.jp/) [地球惑星科学専攻](https://www.geo.kyushu-u.ac.jp/)<br>
-[地球内部ダイナミクス研究室 博士後期課程3年](http://dyna.geo.kyushu-u.ac.jp/)<br>
-<span class="en-text">PhD Student, Department of Earth and Planetary Sciences, <br>
-Graduate School of Science, Kyushu University</span>
+<p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.2rem;">
+  <i class="fa-solid fa-envelope fa-fw"></i> {{ 'kensuke-shobuzako@g.ecc.u-tokyo.ac.jp' | protect_email }}<br>
+  <i class="fa-solid fa-location-dot fa-fw"></i> 〒113-8656 東京都文京区本郷7-3-1 東京大学 工学部1号館 243号室
+</p>
+
+<div class="social-links mb-3" style="font-size: 1.0rem; font-weight: 400;">
+  <a href="https://researchmap.jp/kensuke_shobuzako" target="_blank" class="mr-3 custom-social-link"><i class="fa-solid fa-play"></i><span>researchmap</span></a>
+  <a href="https://scholar.google.com/citations?user=JNwnO24AAAAJ" target="_blank" class="mr-3 custom-social-link"><i class="ai ai-google-scholar" style="font-size: 1.1em;"></i><span>Google Scholar</span></a>
+  <a href="https://orcid.org/0009-0000-4453-5398" target="_blank" class="mr-3 custom-social-link"><i class="ai ai-orcid"></i><span>ORCID</span></a>
+  <a href="https://github.com/shobuzako-kensuke" target="_blank" class="mr-3 custom-social-link"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+  <a href="https://www.researchgate.net/profile/Kensuke-Shobuzako/" target="_blank" class="mr-3 custom-social-link"><i class="ai ai-researchgate" style="font-size: 1.3em;"></i><span>ResearchGate</span></a>
+  <a href="https://twitter.com/zakoken1998" target="_blank" class="custom-social-link"><i class="fa-brands fa-x-twitter"></i><span>(Twitter)</span></a>
+</div>
+
+<div class="mt-4 mb-4">
+  <a href="/profile/" class="btn btn-outline-secondary z-depth-0" role="button" style="margin-right: 10px; padding: 0.4rem 0.8rem;">
+    <i class="fas fa-user-graduate"></i>
+    <span style="font-size: 0.85rem; font-weight: 400; color: inherit;">詳しいプロフィール</span>
+  </a>
+  <a href="/en/" class="btn btn-outline-primary z-depth-0" role="button" style="padding: 0.4rem 0.8rem;">
+  <i class="fas fa-globe"></i>
+  <span style="font-size: 0.85rem; font-weight: 400; color: inherit;">English Version</span>
+  </a>
+</div>
+
+<div style="clear: both;"></div>
 
 {: .extra-margin-top }
 
-**○ キーワード <span class="en-text">/ Keywords</span>**
+<h3 class="mb-3" style="font-weight: 500;">今後の予定</h3>
 
-- 粒子法 <span class="en-text">/ Particle Methods</span>
-- Smoothed Particle Hydrodynamics (SPH)
-- 流体計算 <span class="en-text">/ Computational Fluid Dynamics</span>
-- 惑星内部ダイナミクス <span class="en-text">/ Dynamics of Planetary Interiors</span>
-- 水理工学 <span class="en-text">/ Hydraulic Engineering</span>
+<ul class="mb-3">
+  <li class="mb-2">
+    <span style="font-weight: 500;">
+      2026/05/24–29： 
+      <a href="https://www.jpgu.org/meeting_j2026/" target="_blank" rel="noopener noreferrer">JpGU-AGU Joint Meeting 2026</a>
+      <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em; color: var(--global-text-color-light);"></i>
+      にて発表予定（座長も兼任）
+    </span>
+  </li>
 
-{: .extra-margin-top }
+  <li class="mb-3">
+    <span style="font-weight: 500;">
+      2026/06/03–05： 
+      <a href="https://www.jsces.org/koenkai/31/" target="_blank" rel="noopener noreferrer">第31回 計算工学講演会</a>
+      <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em; color: var(--global-text-color-light);"></i>
+      にて発表予定
+    </span>
+  </li>
+</ul>
 
-**○ 今後の予定 <span class="en-text">/ Upcoming Schedule</span>**<br>
+<style>
+  h3 {
+    margin-bottom: 1rem !important;
+  }
+  li {
+    margin-bottom: 0.8rem; /* 箇条書きの余白 */
+  }
+  .btn {
+    text-transform: none !important; /*ボタンの英語を大文字にしない*/
+  }
+  .btn-outline-primary:hover {
+    background-color: #4285f4 !important;
+    color: var(--global-bg-color) !important;
+  }
 
-- 2025/10/31：博士学位請求論文発表会
-
-{: .extra-margin-top }
-
-**○ 連絡先 <span class="en-text">/ Contact</span>**<br>
-
-- {{ 'shobuzako.kensuke.242@s.kyushu-u.ac.jp' | protect_email }}
+  .btn-outline-secondary:hover {
+    background-color: #a6c !important;
+    color: var(--global-bg-color) !important;
+  }
+  .custom-social-link,
+  .custom-social-link i,
+  .custom-social-link span {
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--global-theme-color) !important;
+  }
+  /* ホバー時：中の文字(span)にだけ下線をピタッと引く */
+  .custom-social-link:hover span {
+    text-decoration: underline !important;
+    color: var(--global-theme-color) !important;
+  }
+</style>
