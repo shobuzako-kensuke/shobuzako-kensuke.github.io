@@ -17,28 +17,28 @@ nav_parent: 研究
         <a href="#international-conf" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 国際学会 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ International Conferences</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.4rem;">(1件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(1件)</span>
         </a>
       </li>
       <li>
         <a href="#domestic-conf" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 国内学会 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ Domestic Conferences</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.4rem;">(12件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(12件)</span>
         </a>
       </li>
       <li>
         <a href="#international-ws" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 国際研究会 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ International Workshops</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.4rem;">(0件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(0件)</span>
         </a>
       </li>
       <li>
         <a href="#domestic-ws" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 国内研究会 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ Domestic Workshops</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.4rem;">(9件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(9件)</span>
         </a>
       </li>
     </ul>
@@ -47,10 +47,12 @@ nav_parent: 研究
 
 <div class="card z-depth-1 cv-card mb-4" id="international-conf" style="scroll-margin-top: 8rem;">
   <div class="card-body">
-    <h3 class="cv-card-title">
-      <i class="fa-solid fa-globe fa-fw"></i> 国際学会
-      <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ International Conferences</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">1件</span>
+    <h3 class="cv-card-title" style="display: flex; justify-content: space-between; align-items: center;">
+      <span>
+        <i class="fa-solid fa-globe fa-fw"></i> 国際学会
+        <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ International Conferences</span>
+      </span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">1件</span>
     </h3>
     <!-- <h5 class="mt-4 mb-4" style="font-weight: 600; color: var(--global-theme-color);">
       <i class="fa-solid fa-microphone-lines fa-fw"></i> 口頭発表 
@@ -77,9 +79,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         The 8th International Conference on the Characterization and Control of Interfaces 2025 (Session: E, No. P-E-11)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2025/07/08–11 (発表: 07/09 17:10-18:00)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> Highland Resort Hotel & Spa, Yamanashi, Japan</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/07/08–11 (発表: 07/09 17:10-18:00)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        Highland Resort Hotel & Spa, Yamanashi, Japan
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> The Society of Powder Technology, Japan (紛体工学会)
@@ -99,10 +105,12 @@ nav_parent: 研究
 
 <div class="card z-depth-1 cv-card mb-4" id="domestic-conf" style="scroll-margin-top: 8rem;">
   <div class="card-body">
-    <h3 class="cv-card-title">
-      <i class="fa-solid fa-landmark-flag fa-fw"></i> 国内学会
-      <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Domestic Conferences</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">12件</span>
+    <h3 class="cv-card-title" style="display: flex; justify-content: space-between; align-items: center;">
+      <span>
+        <i class="fa-solid fa-landmark-flag fa-fw"></i> 国内学会
+        <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Domestic Conferences</span>
+      </span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">12件</span>
     </h3>
     <h5 class="mt-4 mb-4" style="font-weight: 600; color: var(--global-theme-color);">
       <i class="fa-solid fa-microphone-lines fa-fw"></i> 口頭発表 
@@ -124,9 +132,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         第30回 計算工学講演会 (OS24 粒子法・メッシュフリー法の基礎および関連技術 | D-08-01)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2025/06/04–06 (発表: 06/05 13:15-13:30)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> ソニックシティ, 埼玉県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/06/04–06 (発表: 06/05 13:15-13:30)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        ソニックシティ, 埼玉県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本計算工学会
@@ -156,9 +168,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         日本地球惑星科学連合 2025年大会 (M-GI30 計算科学が拓く宇宙惑星地球科学 | MGI30-03)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2025/05/25–30 (発表: 05/27 14:15-14:30)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 幕張メッセ, 千葉県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/05/25–30 (発表: 05/27 14:15-14:30)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        幕張メッセ, 千葉県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本地球惑星科学連合
@@ -188,9 +204,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         第28回 応用力学シンポジウム (計算力学 第2部門(2) | 11012-18-03)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2025/05/16–17 (発表: 05/16 16:45-17:00)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 京都大学 宇治キャンパス, 京都府</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/05/16–17 (発表: 05/16 16:45-17:00)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        京都大学 宇治キャンパス, 京都府
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 土木学会 応用力学委員会
@@ -220,9 +240,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         土木学会 西部支部研究発表会 (I-42)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2025/03/08</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 琉球大学 千原キャンパス, 沖縄県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/03/08
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        琉球大学 千原キャンパス, 沖縄県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 土木学会 西部支部
@@ -252,9 +276,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         日本惑星科学会 2024年秋季講演会 (惑星内部・衝突現象 | OF-01)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2024/09/24–26 (発表: 09/25 14:10-14:20)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 九州大学 医学部百年講堂, 福岡県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2024/09/24–26 (発表: 09/25 14:10-14:20)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        九州大学 医学部百年講堂, 福岡県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本惑星科学会
@@ -284,9 +312,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         第29回 計算工学講演会 (OS09 粒子法・メッシュフリー法の基礎および関連技術 | D-03-04)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2024/06/10–12 (発表: 06/10 14:15-14:30)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 神戸国際会議場, 兵庫県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2024/06/10–12 (発表: 06/10 14:15-14:30)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        神戸国際会議場, 兵庫県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本計算工学会
@@ -315,9 +347,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         日本地球惑星科学連合 2024年大会 (M-IS21 地球流体力学：地球惑星現象への分野横断的アプローチ | MIS21-04)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2024/05/25–31 (発表: 05/29 11:30-11:45)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 幕張メッセ, 千葉県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2024/05/25–31 (発表: 05/29 11:30-11:45)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        幕張メッセ, 千葉県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本地球惑星科学連合
@@ -353,9 +389,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         令和7年度 土木学会全国大会 (計算力学・データサイエンス・V&V/UQ(4) | 12PM1-Uo-01)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2025/09/08–12 (発表: 09/12 13:00-14:20)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 熊本城ホール, 熊本県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/09/08–12 (発表: 09/12 13:00-14:20)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        熊本城ホール, 熊本県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 土木学会
@@ -385,9 +425,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         日本地球惑星科学連合 2025年大会 (H-GM04 地形学 | HGM04-P12)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2025/05/25–30 (発表: 05/26 17:15-19:15)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 幕張メッセ, 千葉県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/05/25–30 (発表: 05/26 17:15-19:15)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        幕張メッセ, 千葉県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本地球惑星科学連合
@@ -417,9 +461,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         日本惑星科学会 2024年秋季講演会 (P-098)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2023/10/11–13 (発表: 10/11 13:15-14:15 | 10/13 11:15-12:15)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 広島市文化交流会館, 広島県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2023/10/11–13 (発表: 10/11 13:15-14:15 | 10/13 11:15-12:15)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        広島市文化交流会館, 広島県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本惑星科学会
@@ -449,9 +497,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         日本地球惑星科学連合 2023年大会 (P-PS07 惑星科学 | PPS07-P30)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2023/05/21–26 (発表: 05/23 10:45-12:15)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 幕張メッセ, 千葉県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2023/05/21–26 (発表: 05/23 10:45-12:15)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        幕張メッセ, 千葉県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本地球惑星科学連合
@@ -481,9 +533,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         日本地球惑星科学連合 2022年大会 (P-PS07 惑星科学 | PPS07-P13)
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2022/05/22–06/03 (オンライン発表: 06/01 11:00-13:00)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 幕張メッセ, 千葉県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2022/05/22–06/03 (オンライン発表: 06/01 11:00-13:00)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        幕張メッセ, 千葉県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 日本地球惑星科学連合
@@ -503,20 +559,24 @@ nav_parent: 研究
 
 <div class="card z-depth-1 cv-card mb-4" id="international-ws" style="scroll-margin-top: 8rem;">
   <div class="card-body">
-    <h3 class="cv-card-title">
-      <i class="fa-solid fa-earth-asia fa-fw"></i> 国際研究会
-      <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ International Workshops</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">0件</span>
+    <h3 class="cv-card-title" style="display: flex; justify-content: space-between; align-items: center;">
+      <span>
+        <i class="fa-solid fa-earth-asia fa-fw"></i> 国際研究会
+        <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ International Workshops</span>
+      </span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">0件</span>
     </h3>
-    </div>
+  </div>
 </div>
 
 <div class="card z-depth-1 cv-card mb-4" id="domestic-ws" style="scroll-margin-top: 8rem;">
   <div class="card-body">
-    <h3 class="cv-card-title">
-      <i class="fa-solid fa-users-viewfinder fa-fw"></i> 国内研究会
-      <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Domestic Workshops</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">9件</span>
+    <h3 class="cv-card-title" style="display: flex; justify-content: space-between; align-items: center;">
+      <span>
+        <i class="fa-solid fa-users-viewfinder fa-fw"></i> 国内研究会
+        <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Domestic Workshops</span>
+      </span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">9件</span>
     </h3>
     <!-- テンプレートはじまり -->
     <div style="margin-top: 1.5rem; margin-bottom: 2.5rem;">
@@ -533,9 +593,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         惑星深部研究会 2026福岡 [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i>  2026/03/16–18 (発表: 03/18 16:00-16:50)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 九州大学 西新プラザ, 福岡県 (オンライン発表)</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2026/03/16–18 (発表: 03/18 16:00-16:50)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        九州大学 西新プラザ, 福岡県 (オンライン発表)
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 惑星深部研究会 (世話人：高橋太 准教授 / 金嶋聡 教授)
@@ -565,9 +629,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         惑星科学センター(CPS) セミナー [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2025/07/14 15:30-17:00</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 神戸大学統合研究拠点 惑星科学センター(CPS), 兵庫県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/07/14 15:30-17:00
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        神戸大学統合研究拠点 惑星科学センター(CPS), 兵庫県
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 惑星科学センター (世話人：大淵済 教授)
@@ -597,9 +665,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         地球内部科学若手セミナー [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2024/11/30 10:00-12:00</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> オンライン</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2024/11/30 10:00-12:00
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        オンライン
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 地球内部科学若手セミナー
@@ -629,9 +701,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         惑星科学若手研究会 2024 (惑星内部セッション | O-06) [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2024/03/04–05 (発表: 03/04 10:15-10:30)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> オンライン</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2024/03/04–05 (発表: 03/04 10:15-10:30)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        オンライン
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 惑星科学若手研究会
@@ -661,9 +737,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         地球惑星科学コミュニティ 夏セミナー2023 [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2023/09/04</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> オンライン</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2023/09/04
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        オンライン
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 地球惑星科学コミュニティ
@@ -693,9 +773,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         地球内部科学若手セミナー 2023＠九大 [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2023/03/28</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> 九州大学 伊都キャンパス, 福岡県</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2023/03/28
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        オンライン
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 地球内部科学若手セミナー
@@ -722,9 +806,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         太陽系天体若手研究会 2022 (惑星内部・生命セッション | O-10) [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2022/11/16–18 (発表: 11/17 13:15-13:30)</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> オンライン</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2022/11/16–18 (発表: 11/17 13:15-13:30)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        オンライン
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 太陽系天体若手研究会
@@ -754,9 +842,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         地球惑星科学コミュニティ [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2022/08/31</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> オンライン</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2022/08/31
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        オンライン
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 地球惑星科学コミュニティ
@@ -786,9 +878,13 @@ nav_parent: 研究
         <i class="fa-solid fa-tag fa-fw"></i>
         地球内部科学若手セミナー 2022 [口頭発表]
       </div>
-      <div style="font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.1rem;">
-        <div style="color: var(--global-text-color-light);"><i class="fa-regular fa-calendar-days fa-fw"></i> 2022/01/08</div>
-        <div style="color: var(--global-text-color-light);"><i class="fa-solid fa-location-dot fa-fw"></i> オンライン</div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2022/01/08
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        オンライン
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
         <i class="fa-solid fa-building-columns fa-fw"></i> 地球内部科学若手セミナー

@@ -14,7 +14,7 @@ subtitle: '<span style="font-weight: 500;">Researcher in computational fluid dyn
         <img src="/assets/img/profile_pic.png" alt="Kensuke Shobuzako" class="img-fluid rounded z-depth-1" style="max-width: 200px; border: 3px solid var(--global-bg-color);">
       </div>
       <div class="col-md-8">
-        <h2 class="font-weight-bold mb-1">Kensuke SHOBUZAKO <span class="text-muted" style="font-size: 2.0rem; font-weight: normal;">(菖蒲迫 健介)</span></h2>
+        <h2 class="font-weight-bold mb-1">Kensuke SHOBUZAKO</h2>
         <p class="lead" style="margin-bottom: 0.5rem; font-weight: 500;">Project Researcher, The University of Tokyo</p>
         <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.8rem;">
           <i class="fa-solid fa-envelope fa-fw"></i> {{ 'kensuke-shobuzako@g.ecc.u-tokyo.ac.jp' | protect_email }}
@@ -38,7 +38,7 @@ subtitle: '<span style="font-weight: 500;">Researcher in computational fluid dyn
         <strong style="color: var(--global-text-color);"><i class="fa-solid fa-magnifying-glass fa-fw"></i> Keywords:</strong>
       </div>
       <div style="line-height: 1.5;">
-        Smoothed Particle Hydrodynamics (SPH), Computational Fluid Dynamics
+        Particle Methods, Smoothed Particle Hydrodynamics (SPH), Computational Fluid Dynamics (CFD), Dynamics of the Earth's Interior, Computational Engineering
       </div>
     </div>
   </div>

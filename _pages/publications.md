@@ -18,21 +18,21 @@ nav_parent: 研究
         <a href="#refereed-paper" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 査読付き論文 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ Refereed Papers</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.4rem;">(2件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(2件)</span>
         </a>
       </li>
       <li>
         <a href="#unrefereed-paper" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 査読無し論文 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ Unrefereed Papers</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.4rem;">(2件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(2件)</span>
         </a>
       </li>
       <li>
         <a href="#unrefereed-article" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 査読無し記事 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ Unrefereed Articles</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.4rem;">(2件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(2件)</span>
         </a>
       </li>
       <li>
@@ -48,10 +48,12 @@ nav_parent: 研究
 
 <div class="card z-depth-1 cv-card mb-4" id="refereed-paper" style="scroll-margin-top: 8rem;">
   <div class="card-body">
-    <h3 class="cv-card-title">
-      <i class="fa-solid fa-book-open fa-fw"></i> 査読付き論文
-      <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Refereed Papers</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">2件</span>
+    <h3 class="cv-card-title" style="display: flex; justify-content: space-between; align-items: center;">
+      <span>
+        <i class="fa-solid fa-book-open fa-fw"></i> 査読付き論文
+        <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Refereed Papers</span>
+      </span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">2件</span>
     </h3>
     <h5 class="mt-4 mb-3" style="font-weight: 600; color: var(--global-theme-color);">
       <i class="fa-solid fa-user-pen fa-fw"></i> 筆頭著者 
@@ -127,10 +129,12 @@ nav_parent: 研究
 
 <div class="card z-depth-1 cv-card mb-4" id="unrefereed-paper" style="scroll-margin-top: 8rem;">
   <div class="card-body">
-    <h3 class="cv-card-title">
-      <i class="fa-solid fa-file-lines fa-fw"></i> 査読無し論文
-      <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Unrefereed Papers</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">2件</span>
+    <h3 class="cv-card-title" style="display: flex; justify-content: space-between; align-items: center;">
+      <span>
+        <i class="fa-solid fa-file-lines fa-fw"></i> 査読無し論文
+        <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Unrefereed Papers</span>
+      </span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">2件</span>
     </h3>
     <h5 class="mt-4 mb-3" style="font-weight: 600; color: var(--global-theme-color);">
       <i class="fa-solid fa-user-pen fa-fw"></i> 筆頭著者 
@@ -221,10 +225,12 @@ nav_parent: 研究
 
 <div class="card z-depth-1 cv-card mb-4" id="unrefereed-article" style="scroll-margin-top: 8rem;">
   <div class="card-body">
-    <h3 class="cv-card-title">
-      <i class="fa-solid fa-newspaper fa-fw"></i> 査読無し記事
-      <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Unrefereed Articles</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">2件</span>
+    <h3 class="cv-card-title" style="display: flex; justify-content: space-between; align-items: center;">
+      <span>
+        <i class="fa-solid fa-newspaper fa-fw"></i> 査読無し記事
+        <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Unrefereed Articles</span>
+      </span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">2件</span>
     </h3>
     <!-- テンプレートはじまり -->
     <div style="margin-bottom: 2.5rem; margin-top: 1.5rem;">

@@ -13,7 +13,7 @@ nav_order: 1
         <img src="/assets/img/profile_pic.png" alt="Kensuke Shobusako" class="img-fluid rounded z-depth-1" style="max-width: 200px; border: 3px solid var(--global-bg-color);">
       </div>
       <div class="col-md-8">
-        <h2 class="font-weight-bold mb-1">菖蒲迫 健介 <span class="text-muted" style="font-size: 1.8rem; font-weight: normal;">(Kensuke SHOBUZAKO)</span></h2>
+        <h2 class="font-weight-bold mb-1">菖蒲迫 健介</h2>
         <p class="lead" style="margin-bottom: 0.5rem; font-weight: 500;">東京大学 大学院工学系研究科 社会基盤学専攻 特任研究員</p>
         <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.8rem;">
           <i class="fa-solid fa-envelope fa-fw"></i> {{ 'kensuke-shobuzako@g.ecc.u-tokyo.ac.jp' | protect_email }}<br>
@@ -33,14 +33,14 @@ nav_order: 1
     </div> <hr style="border-top: 1px dashed var(--global-divider-color); margin-top: 0.5rem; margin-bottom: 1.5rem;">
     <p class="mb-3" style="font-size: 0.95rem; line-height: 1.6;">
       粒子法の一種である <span style="font-weight: 600;">Smoothed Particle Hydrodynamics (SPH) 法</span> に関する基礎研究，SPH法を用いた地球科学・土木工学分野への応用研究などに従事しています．
-      特に最近は，最小二乗法をベースとしたSPH法 (<span style="font-weight: 600;">LS-SPH法</span>) に関する理論研究に重点的に取り組んでいます．
+      特に最近は，最小二乗法をベースとしたSPH法 (<span style="font-weight: 600;">最小二乗SPH法</span>) に関する理論研究に重点的に取り組んでいます．
     </p>
     <div class="px-3 py-2" style="background-color: var(--global-bg-color); border: 1.5px solid var(--global-divider-color); border-radius: 8px; font-size: 0.95rem;">
       <div style="margin-bottom: 0.3rem;">
         <strong style="color: var(--global-text-color);"><i class="fa-solid fa-magnifying-glass fa-fw"></i> 研究キーワード：</strong>
       </div>
       <div style="line-height: 1.5;">
-        粒子法 (SPH法)，数値流体力学
+        粒子法，最小二乗SPH法，流体計算，地球内部ダイナミクス，計算工学
       </div>
     </div>
   </div>
@@ -57,18 +57,18 @@ nav_order: 1
 
 <div class="card z-depth-1 cv-card mb-4" markdown="1">
 <div class="card-body" markdown="1">
-<h3 class="cv-card-title"><i class="fa-solid fa-graduation-cap fa-fw"></i> 学歴</h3>
+<h3 class="cv-card-title"><i class="fa-solid fa-graduation-cap fa-fw"></i> 学歴 – 博士 (理学)</h3>
 
-- **2023/04 – 2026/03**： 九州大学 大学院理学府 地球惑星科学専攻 博士後期課程【 **博士 (理学)** 】
-- **2021/04 – 2023/03**： 九州大学 大学院理学府 地球惑星科学専攻 修士課程【 **修士 (理学)** 】
-- **2017/04 – 2021/03**： 九州大学 理学部 地球惑星科学科【 **学士 (理学)** 】
+- **2023/04 – 2026/03**： 九州大学 大学院理学府 地球惑星科学専攻 博士後期課程
+- **2021/04 – 2023/03**： 九州大学 大学院理学府 地球惑星科学専攻 修士課程
+- **2017/04 – 2021/03**： 九州大学 理学部 地球惑星科学科
 - **2014/04 – 2017/03**： 岡山県立岡山一宮高等学校 普通科
 
 <hr style="margin: 1.2rem 0 1rem 0; border-top: 1px dashed var(--global-divider-color, #e9ecef);">
 
 <div class="text-right" style="font-size: 0.95rem;">
   <a href="/research/publications/#thesis" class="cv-ext-link" style="font-weight: 600;">
-    <i class="fa-solid fa-file-pdf fa-fw"></i><span>学位論文 (卒論・修論・博論) の詳細はこちら</span><i class="fa-solid fa-chevron-right fa-2xs"></i>
+    <i class="fa-solid fa-file-pdf fa-fw"></i><span>学位論文の詳細はこちら</span>
   </a>
 </div>
 

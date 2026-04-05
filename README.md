@@ -322,7 +322,7 @@
 > [!Note]
 >
 > - 2026/3/17: オリジナルの仕様はブラックボックスが多く煩雑なので，`layout: page` にして自由に書けるようにした
-> - 今後は `_pages/presentation.md` および `_pages/publications.md` を編集すること
+> - 今後は `_pages/presentations.md` および `_pages/publications.md` を編集すること
 
 準備：`_config.yml` ファイルの `Jekyll Scholar` というセクションを検索した後，`scholar:` で自分の名前を入力しておく (これにより自分の名前がハイライトされる)．
 
