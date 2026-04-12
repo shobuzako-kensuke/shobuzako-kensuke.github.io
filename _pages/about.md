@@ -2,7 +2,7 @@
 layout: about # _layouts/about.html というレイアウトを使用
 title: ホーム # このページのタイトル (ナビゲーションバーに表示される)
 permalink: / # このページの URL をトップに設定
-subtitle: "<span style='font-weight: 400;'>菖蒲迫 健介 | 粒子法 (SPH法) を用いた流体シミュレーション屋</span>" # タイトルの下に表示されるサブタイトルのテキスト
+subtitle: "<span style='font-weight: 400;'>菖蒲迫 健介 | 粒子法 (SPH法) の基礎・応用研究に取り組んでいます</span>" # タイトルの下に表示されるサブタイトルのテキスト
 
 profile: # プロフィールの設定
   align: left # プロフィール画像を右側に配置

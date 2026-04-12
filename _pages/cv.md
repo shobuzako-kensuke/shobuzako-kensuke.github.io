@@ -32,8 +32,8 @@ nav_order: 1
       </div>
     </div> <hr style="border-top: 1px dashed var(--global-divider-color); margin-top: 0.5rem; margin-bottom: 1.5rem;">
     <p class="mb-3" style="font-size: 0.95rem; line-height: 1.6;">
-      粒子法の一種である <span style="font-weight: 600;">Smoothed Particle Hydrodynamics (SPH) 法</span> に関する基礎研究，SPH法を用いた地球科学・土木工学分野への応用研究などに従事しています．
-      特に最近は，最小二乗法をベースとしたSPH法 (<span style="font-weight: 600;">最小二乗SPH法</span>) に関する理論研究に重点的に取り組んでいます．
+      粒子法の一種である <span style="font-weight: 600;">Smoothed Particle Hydrodynamics (SPH) 法</span> を研究しています．
+      特に，最小二乗法をベースとした高精度なSPH法 (<span style="font-weight: 600;">最小二乗SPH法</span>) に関する基礎・応用研究に取り組んでいます．
     </p>
     <div class="px-3 py-2" style="background-color: var(--global-bg-color); border: 1.5px solid var(--global-divider-color); border-radius: 8px; font-size: 0.95rem;">
       <div style="margin-bottom: 0.3rem;">
