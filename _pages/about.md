@@ -65,17 +65,8 @@ latest_posts: # 最新ブログ記事 (_posts 内) の設定
 <ul class="mb-3">
   <li class="mb-2">
     <span style="font-weight: 500;">
-      2026/05/24–29： 
-      <a href="https://www.jpgu.org/meeting_j2026/" target="_blank" rel="noopener noreferrer">JpGU-AGU Joint Meeting 2026</a>
-      <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em; color: var(--global-text-color-light);"></i>
-      にて発表予定（座長も兼任）
-    </span>
-  </li>
-
-  <li class="mb-3">
-    <span style="font-weight: 500;">
-      2026/06/03–05： 
-      <a href="https://www.jsces.org/koenkai/31/" target="_blank" rel="noopener noreferrer">第31回 計算工学講演会</a>
+      2026/07/06–08： 
+      <a href="https://sites.google.com/view/pgc2026/home" target="_blank" rel="noopener noreferrer">Particulate Gravity Currents 2026 (PGC2026)</a>
       <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em; color: var(--global-text-color-light);"></i>
       にて発表予定
     </span>

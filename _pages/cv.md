@@ -173,7 +173,7 @@ nav_order: 1
   <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">4件</span>
 </h5>
 
-- **2025 – <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.8rem; padding: 0.25em 0.6em; vertical-align: text-bottom;">現在</span>**： **学会座長 (計算科学が拓く宇宙惑星科学セッション)** — 日本地球惑星科学連合 (JpGU) 大会
+- **2025 – <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.8rem; padding: 0.25em 0.6em; vertical-align: text-bottom;">現在</span>**： **学会座長 (計算科学が拓く宇宙惑星科学セッション)** — 日本地球惑星科学連合大会 (JpGU)
   <div style="font-size: 0.85rem; color: var(--global-text-color-light); margin-top: 0.3rem; margin-bottom: 0rem; line-height: 1.6;">
     <div style="margin-bottom: 0.2rem; color: var(--global-text-color-light);">
       <i class="fa-solid fa-circle-info fa-fw"></i> 2026年大会は JpGU-AGU Joint Meeting (国際学会)

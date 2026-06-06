@@ -17,14 +17,14 @@ nav_parent: 研究
         <a href="#international-conf" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 国際学会 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ International Conferences</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(1件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(2件)</span>
         </a>
       </li>
       <li>
         <a href="#domestic-conf" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 国内学会 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ Domestic Conferences</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(12件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(14件)</span>
         </a>
       </li>
       <li>
@@ -52,7 +52,7 @@ nav_parent: 研究
         <i class="fa-solid fa-globe fa-fw"></i> 国際学会
         <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ International Conferences</span>
       </span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">1件</span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">2件</span>
     </h3>
     <!-- <h5 class="mt-4 mb-4" style="font-weight: 600; color: var(--global-theme-color);">
       <i class="fa-solid fa-microphone-lines fa-fw"></i> 口頭発表 
@@ -62,8 +62,44 @@ nav_parent: 研究
     <h5 class="mt-4 mb-4" style="font-weight: 600; color: var(--global-theme-color);">
       <i class="fa-solid fa-chalkboard-user fa-fw"></i> ポスター発表 
       <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ Poster</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">1件</span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">2件</span>
     </h5>
+    <!-- テンプレートはじまり -->
+    <div style="margin-top: 1.5rem; margin-bottom: 1rem;">
+      <div style="font-size: 1.05rem; font-weight: 600; color: var(--global-text-color); line-height: 1.5; margin-bottom: 0.4rem; padding-bottom: 0.4rem; border-bottom: 1.2px solid var(--global-divider-color); display: flex; justify-content: space-between; align-items: flex-start;">
+        <span>
+          Boundary treatment with multi-layer ghost particles as a dominant error source in the Least-Squares SPH method
+        </span>
+        <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.5rem; white-space: nowrap; margin-top: 0.2rem;">座長</span>
+      </div>
+      <div style="font-size: 0.95rem; line-height: 1.6; color: var(--global-text-color); margin-bottom: 0.2rem;">
+        <i class="fa-solid fa-circle-user fa-fw" style="color: var(--global-theme-color);"></i><strong>Kensuke Shobuzako</strong>, Shigeo Yoshida
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-tag fa-fw"></i>
+        JpGU-AGU Joint Meeting 2026 (Session: Computational sciences on the universe, galaxies, stars, planets and their environments, No. MGI36-P02)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/05/24–29 (発表: 05/29 17:15-19:00)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        Makuhari Messe, Chiba, Japan
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
+        <i class="fa-solid fa-building-columns fa-fw"></i> Japan Geoscience Union (JpGU) & American Geophysical Union (AGU)
+      </div>
+      <div style="margin-top: 0.4rem; display: flex; align-items: center; flex-wrap: wrap;">
+        <a href="https://www.jpgu.org/meeting_e2026/" target="_blank" rel="noopener noreferrer" class="mr-3" style="font-size: 0.85rem; color: var(--global-theme-color); font-weight: 600;">
+          <i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i> 大会HP
+        </a>
+        <a href="/news/2026-05-29-presentation/" target="_blank" class="mr-3" style="font-size: 0.85rem; color: var(--global-theme-color); font-weight: 600;">
+          <i class="fa-solid fa-newspaper fa-fw"></i> HPニュース記事
+        </a>
+      </div>
+    </div>
+    <!-- テンプレート終わり -->
     <!-- テンプレートはじまり -->
     <div style="margin-top: 1.5rem; margin-bottom: 1rem;">
       <div style="font-size: 1.05rem; font-weight: 600; color: var(--global-text-color); line-height: 1.5; margin-bottom: 0.4rem; padding-bottom: 0.4rem; border-bottom: 1.2px solid var(--global-divider-color); display: flex; justify-content: space-between; align-items: flex-start;">
@@ -110,13 +146,85 @@ nav_parent: 研究
         <i class="fa-solid fa-landmark-flag fa-fw"></i> 国内学会
         <span class="text-muted" style="font-size: 0.9rem; font-weight: normal; margin-left: 0.3rem;">/ Domestic Conferences</span>
       </span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">12件</span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; margin-left: 0.5rem; white-space: nowrap;">14件</span>
     </h3>
     <h5 class="mt-4 mb-4" style="font-weight: 600; color: var(--global-theme-color);">
       <i class="fa-solid fa-microphone-lines fa-fw"></i> 口頭発表 
       <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ Oral</span>
-      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">7件</span>
+      <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.9rem; vertical-align: text-bottom; transform: translateY(-2px); margin-left: 0.5rem;">9件</span>
     </h5>
+    <!-- テンプレートはじまり -->
+    <div style="margin-top: 1.5rem; margin-bottom: 2.5rem;">
+      <div style="font-size: 1.05rem; font-weight: 600; color: var(--global-text-color); line-height: 1.5; margin-bottom: 0.4rem; padding-bottom: 0.4rem; border-bottom: 1.2px solid var(--global-divider-color); display: flex; justify-content: space-between; align-items: flex-start;">
+        <span>
+          多層ゴースト粒子を用いた境界処理に起因する最小二乗SPH法の精度劣化とその回避 
+        </span>
+        <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.5rem; white-space: nowrap; margin-top: 0.2rem;">キーノート講演</span>
+      </div>
+      <div style="font-size: 0.95rem; line-height: 1.6; color: var(--global-text-color); margin-bottom: 0.2rem;">
+        <i class="fa-solid fa-circle-user fa-fw" style="color: var(--global-theme-color);"></i><strong>菖蒲迫健介</strong>, 吉田茂生, 浅井光輝
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-tag fa-fw"></i>
+        第31回 計算工学講演会 (OS10 粒子法・メッシュフリー法の基礎および関連技術 | A-10-01)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/06/03–05 (発表: 06/05 13:15-13:45)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        ウインク愛知, 愛知県
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
+        <i class="fa-solid fa-building-columns fa-fw"></i> 日本計算工学会
+      </div>
+      <div style="margin-top: 0.4rem; display: flex; align-items: center; flex-wrap: wrap;">
+        <a href="https://www.jsces.org/koenkai/31/" target="_blank" rel="noopener noreferrer" class="mr-3" style="font-size: 0.85rem; color: var(--global-theme-color); font-weight: 600;">
+          <i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i> 大会HP
+        </a>
+        <a href="/news/2026-06-05-award/" target="_blank" class="mr-3" style="font-size: 0.85rem; color: var(--global-theme-color); font-weight: 600;">
+          <i class="fa-solid fa-newspaper fa-fw"></i> HPニュース記事
+        </a>
+      </div>
+    </div>
+    <!-- テンプレート終わり -->
+    <!-- テンプレートはじまり -->
+    <div style="margin-top: 1.5rem; margin-bottom: 2.5rem;">
+      <div style="font-size: 1.05rem; font-weight: 600; color: var(--global-text-color); line-height: 1.5; margin-bottom: 0.4rem; padding-bottom: 0.4rem; border-bottom: 1.2px solid var(--global-divider-color); display: flex; justify-content: space-between; align-items: flex-start;">
+        <span>
+          制約条件付き最小二乗法に基づくSPH法による表面張力を考慮した自由表面流れ解析
+        </span>
+        <!-- <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.5rem; white-space: nowrap; margin-top: 0.2rem;">キーノート講演</span> -->
+      </div>
+      <div style="font-size: 0.95rem; line-height: 1.6; color: var(--global-text-color); margin-bottom: 0.2rem;">
+        松永幸大, 藤岡秀二郎, <i class="fa-solid fa-circle-user fa-fw" style="color: var(--global-theme-color);"></i><strong>菖蒲迫健介</strong>, 浅井光輝
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-tag fa-fw"></i>
+        第31回 計算工学講演会 (OS10 粒子法・メッシュフリー法の基礎および関連技術 | A-10-02)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2025/06/03–05 (発表: 06/05 13:45-14:00)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        ウインク愛知, 愛知県
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
+        <i class="fa-solid fa-building-columns fa-fw"></i> 日本計算工学会
+      </div>
+      <div style="margin-top: 0.4rem; display: flex; align-items: center; flex-wrap: wrap;">
+        <a href="https://www.jsces.org/koenkai/31/" target="_blank" rel="noopener noreferrer" class="mr-3" style="font-size: 0.85rem; color: var(--global-theme-color); font-weight: 600;">
+          <i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i> 大会HP
+        </a>
+        <!-- <a href="/news/2026-06-05-award/" target="_blank" class="mr-3" style="font-size: 0.85rem; color: var(--global-theme-color); font-weight: 600;">
+          <i class="fa-solid fa-newspaper fa-fw"></i> HPニュース記事
+        </a> -->
+      </div>
+    </div>
+    <!-- テンプレート終わり -->
     <!-- テンプレートはじまり -->
     <div style="margin-top: 1.5rem; margin-bottom: 2.5rem;">
       <div style="font-size: 1.05rem; font-weight: 600; color: var(--global-text-color); line-height: 1.5; margin-bottom: 0.4rem; padding-bottom: 0.4rem; border-bottom: 1.2px solid var(--global-divider-color); display: flex; justify-content: space-between; align-items: flex-start;">

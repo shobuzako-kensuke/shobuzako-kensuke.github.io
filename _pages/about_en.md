@@ -31,7 +31,7 @@ subtitle: '<span style="font-weight: 500;">Researcher in computational fluid dyn
       </div>
     </div> <hr style="border-top: 1px dashed var(--global-divider-color); margin-top: 0.5rem; margin-bottom: 1.5rem;">
     <p class="mb-3" style="font-size: 0.95rem; line-height: 1.6;">
-      I am a Project Researcher at the Department of Civil Engineering, Graduate School of Engineering, The University of Tokyo. My research focuses on computational fluid dynamics (CFD), specifically the development and fundamental mathematical analysis of the <strong>Smoothed Particle Hydrodynamics (SPH) method</strong>. In addition, I apply these mesh-free particle methods to complex problems in both Earth and planetary sciences and civil engineering.
+      I am a Project Researcher at the Department of Civil Engineering, Graduate School of Engineering, the University of Tokyo. My research focuses on computational fluid dynamics (CFD), specifically the development and fundamental mathematical analysis of the <strong>Smoothed Particle Hydrodynamics (SPH) method</strong>. In addition, I apply these mesh-free particle methods to complex problems in both Earth and planetary sciences and civil engineering.
     </p>
     <div class="px-3 py-2" style="background-color: var(--global-bg-color); border: 1.5px solid var(--global-divider-color); border-radius: 8px; font-size: 0.95rem;">
       <div style="margin-bottom: 0.3rem;">
@@ -81,7 +81,7 @@ Graduate School of Science, Kyushu University
 
 <div class="card z-depth-1 cv-card mb-4" markdown="1">
 <div class="card-body" markdown="1">
-<h3 class="cv-card-title"><i class="fa-solid fa-star fa-fw"></i> Featured Research: LS-SPH Method</h3>
+<h3 class="cv-card-title"><i class="fa-solid fa-star fa-fw"></i> Featured Research: LS-SPH</h3>
 
 <p class="mb-4" style="font-size: 0.95rem; line-height: 1.6;">
   I have developed a generalized SPH framework based on the moving least-squares method, referred to as the <strong>Least-Squares SPH (LS-SPH) method</strong>. This method overcomes the fundamental limitation of the classical SPH method (zeroth-order consistency), demonstrating high-order accuracy through several fluid benchmark tests.
