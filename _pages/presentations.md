@@ -17,7 +17,7 @@ nav_parent: 研究
         <a href="#international-conf" class="toc-link" style="color: var(--global-text-color); font-weight: 500; text-decoration: none;">
           <i class="fa-solid fa-angle-right fa-fw" style="color: var(--global-theme-color);"></i> 国際学会 
           <span class="text-muted" style="font-size: 0.85rem; font-weight: normal; margin-left: 0.2rem;">/ International Conferences</span>
-          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(2件)</span>
+          <span style="font-size: 0.85rem; color: var(--global-text-color-light); margin-left: 0.2rem;">(3件)</span>
         </a>
       </li>
       <li>
@@ -68,6 +68,41 @@ nav_parent: 研究
     <div style="margin-top: 1.5rem; margin-bottom: 1rem;">
       <div style="font-size: 1.05rem; font-weight: 600; color: var(--global-text-color); line-height: 1.5; margin-bottom: 0.4rem; padding-bottom: 0.4rem; border-bottom: 1.2px solid var(--global-divider-color); display: flex; justify-content: space-between; align-items: flex-start;">
         <span>
+          High-accuracy rigid wall boundary modeling in the Least-Squares SPH method
+        </span>
+      </div>
+      <div style="font-size: 0.95rem; line-height: 1.6; color: var(--global-text-color); margin-bottom: 0.2rem;">
+        <i class="fa-solid fa-circle-user fa-fw" style="color: var(--global-theme-color);"></i><strong>Kensuke Shobuzako</strong>, Shigeo Yoshida, Takenori Shimozono, Mitsuteru Asai
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-tag fa-fw"></i>
+        Particulate Gravity Currents 2026 (PGC2026) (No. Poster-20)
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-regular fa-calendar-days fa-fw"></i>
+        2026/07/06–09
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
+        <i class="fa-solid fa-location-dot fa-fw"></i>
+        Kyoto University, Kyoto, Japan
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.3rem;">
+        <i class="fa-solid fa-building-columns fa-fw"></i> PGC LOC
+      </div>
+      <div style="margin-top: 0.4rem; display: flex; align-items: center; flex-wrap: wrap;">
+        <a href="https://sites.google.com/view/pgc2026/home?authuser=0" target="_blank" rel="noopener noreferrer" class="mr-3" style="font-size: 0.85rem; color: var(--global-theme-color); font-weight: 600;">
+          <i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i> 大会HP
+        </a>
+        <a href="/news/2026-07-06-presentation/" target="_blank" class="mr-3" style="font-size: 0.85rem; color: var(--global-theme-color); font-weight: 600;">
+          <i class="fa-solid fa-newspaper fa-fw"></i> HPニュース記事
+        </a>
+      </div>
+    </div>
+    <!-- テンプレート終わり -->
+    <!-- テンプレートはじまり -->
+    <div style="margin-top: 1.5rem; margin-bottom: 1rem;">
+      <div style="font-size: 1.05rem; font-weight: 600; color: var(--global-text-color); line-height: 1.5; margin-bottom: 0.4rem; padding-bottom: 0.4rem; border-bottom: 1.2px solid var(--global-divider-color); display: flex; justify-content: space-between; align-items: flex-start;">
+        <span>
           Boundary treatment with multi-layer ghost particles as a dominant error source in the Least-Squares SPH method
         </span>
         <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.5rem; white-space: nowrap; margin-top: 0.2rem;">座長</span>
@@ -81,7 +116,7 @@ nav_parent: 研究
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
         <i class="fa-regular fa-calendar-days fa-fw"></i>
-        2025/05/24–29 (発表: 05/29 17:15-19:00)
+        2026/05/24–29 (発表: 05/29 17:15-19:00)
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
         <i class="fa-solid fa-location-dot fa-fw"></i>
@@ -170,7 +205,7 @@ nav_parent: 研究
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
         <i class="fa-regular fa-calendar-days fa-fw"></i>
-        2025/06/03–05 (発表: 06/05 13:15-13:45)
+        2026/06/03–05 (発表: 06/05 13:15-13:45)
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
         <i class="fa-solid fa-location-dot fa-fw"></i>
@@ -206,7 +241,7 @@ nav_parent: 研究
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
         <i class="fa-regular fa-calendar-days fa-fw"></i>
-        2025/06/03–05 (発表: 06/05 13:45-14:00)
+        2026/06/03–05 (発表: 06/05 13:45-14:00)
       </div>
       <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 0.1rem;">
         <i class="fa-solid fa-location-dot fa-fw"></i>
