@@ -156,6 +156,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-06-05-presentation/";
+            },},{id: "news-particulate-gravity-currents-2026-pgc2026-にてポスター発表を行いました",
+          title: 'Particulate Gravity Currents 2026 (PGC2026) にてポスター発表を行いました',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-07-06-presentation/";
             },},{id: "projects-高精度sph法",
           title: '高精度SPH法',
           description: "最小二乗SPH (LS-SPH) の開発",
