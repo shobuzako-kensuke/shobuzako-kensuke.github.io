@@ -65,7 +65,7 @@ latest_posts: # 最新ブログ記事 (_posts 内) の設定
 <ul class="mb-3">
   <li class="mb-2">
     <span style="font-weight: 500;">
-      2026/03/12–15： 
+      2027/03/12–15： 
       <a href="https://cfc2027.iacm.info/" target="_blank" rel="noopener noreferrer">Computational Fluids Conference 2027</a>
       <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em; color: var(--global-text-color-light);"></i>
       にて発表予定
