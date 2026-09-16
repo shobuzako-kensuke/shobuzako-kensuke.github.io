@@ -151,8 +151,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-05-29-presentation/";
-            },},{id: "news-第31回-計算工学講演会にて口頭発表を行いました",
-          title: '第31回 計算工学講演会にて口頭発表を行いました',
+            },},{id: "news-第31回-計算工学講演会にて口頭発表-基調講演-を行いました",
+          title: '第31回 計算工学講演会にて口頭発表（基調講演）を行いました',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-06-05-presentation/";
@@ -161,6 +161,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-07-06-presentation/";
+            },},{id: "news-hors40th記念合同現地観測キャンペーンに参加しました",
+          title: 'HORS40th記念合同現地観測キャンペーンに参加しました',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-08-31-observation/";
             },},{id: "projects-高精度sph法",
           title: '高精度SPH法',
           description: "最小二乗SPH (LS-SPH) の開発",
