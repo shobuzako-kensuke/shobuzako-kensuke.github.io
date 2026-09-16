@@ -22,7 +22,7 @@ nav_parent: 資料
             <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.3rem;">技術記事</span>
           </div>
           <div style="font-size: 0.95rem; font-weight: 700; color: #dc3545; display: flex; align-items: center;">
-            <i class="fa-solid fa-crown fa-fw mr-1" style="color: #ffc107;"></i> 352,749 views
+            <i class="fa-solid fa-crown fa-fw mr-1" style="color: #ffc107;"></i> 385,548 views
           </div>
         </div>
         <h4 style="font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;">
@@ -61,7 +61,7 @@ nav_parent: 資料
             <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.3rem;">技術記事</span>
           </div>
           <div style="font-size: 0.9rem; font-weight: 600; color: #dc3545;">
-            <i class="fa-solid fa-eye fa-fw"></i> 3,129 views 
+            <i class="fa-solid fa-eye fa-fw"></i> 4,922 views 
           </div>
         </div>
         <h4 style="font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;">
@@ -100,7 +100,7 @@ nav_parent: 資料
             <span class="badge badge-pill" style="background-color: #d97706; color: white; font-size: 0.75rem; margin-left: 0.3rem;">解説記事</span>
           </div>
           <div style="font-size: 0.9rem; font-weight: 600; color: #dc3545;">
-            <i class="fa-solid fa-eye fa-fw"></i> 8,471 views
+            <i class="fa-solid fa-eye fa-fw"></i> 9,595 views
           </div>
         </div>
         <h4 style="font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;">
@@ -129,7 +129,7 @@ nav_parent: 資料
             <span class="badge badge-pill" style="background-color: #6f42c1; color: white; font-size: 0.75rem; margin-left: 0.3rem;">学術記事</span>
           </div>
           <div style="font-size: 0.9rem; font-weight: 600; color: #dc3545;">
-            <i class="fa-solid fa-eye fa-fw"></i> 1,927 views
+            <i class="fa-solid fa-eye fa-fw"></i> 2,400 views
           </div>
         </div>
         <h4 style="font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;">
@@ -158,7 +158,7 @@ nav_parent: 資料
             <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.3rem;">技術記事</span>
           </div>
           <div style="font-size: 0.9rem; font-weight: 600; color: #dc3545;">
-            <i class="fa-solid fa-eye fa-fw"></i> 13,988 views
+            <i class="fa-solid fa-eye fa-fw"></i> 15,282 views
           </div>
         </div>
         <h4 style="font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;">
@@ -187,7 +187,7 @@ nav_parent: 資料
             <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.3rem;">技術記事</span>
           </div>
           <div style="font-size: 0.9rem; font-weight: 600; color: #dc3545;">
-            <i class="fa-solid fa-eye fa-fw"></i> 52,989 views
+            <i class="fa-solid fa-eye fa-fw"></i> 56,407 views
           </div>
         </div>
         <h4 style="font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;">
@@ -216,7 +216,7 @@ nav_parent: 資料
             <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.3rem;">技術記事</span>
           </div>
           <div style="font-size: 0.9rem; font-weight: 600; color: #dc3545;">
-            <i class="fa-solid fa-eye fa-fw"></i> 14,072 views
+            <i class="fa-solid fa-eye fa-fw"></i> 15,285 views
           </div>
         </div>
         <h4 style="font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;">
@@ -245,7 +245,7 @@ nav_parent: 資料
             <span class="badge badge-pill" style="background-color: var(--global-theme-color); color: white; font-size: 0.75rem; margin-left: 0.3rem;">技術記事</span>
           </div>
           <div style="font-size: 0.95rem; font-weight: 700; color: #dc3545; display: flex; align-items: center;">
-            <i class="fa-solid fa-crown fa-fw mr-1" style="color: #ffc107;"></i> 352,749 views
+            <i class="fa-solid fa-crown fa-fw mr-1" style="color: #ffc107;"></i> 385,548 views
           </div>
         </div>
         <h4 style="font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;">

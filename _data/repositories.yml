@@ -4,5 +4,6 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - shobuzako-kensuke/LS-SPH-Benchmarks
   - shobuzako-kensuke/DEM-Examples
   # - shobuzako-kensuke/shobuzako-kensuke.github.io

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 第31回 計算工学講演会にて口頭発表を行いました
+title: 第31回 計算工学講演会にて口頭発表（基調講演）を行いました
 date: 2026-06-05 12:00:00 +0900
 inline: false
 related_posts: false

@@ -32,15 +32,14 @@ nav_order: 1
       </div>
     </div> <hr style="border-top: 1px dashed var(--global-divider-color); margin-top: 0.5rem; margin-bottom: 1.5rem;">
     <p class="mb-3" style="font-size: 0.95rem; line-height: 1.6;">
-      粒子法の一種である <span style="font-weight: 600;">Smoothed Particle Hydrodynamics (SPH) 法</span> を研究しています．
-      特に，最小二乗法をベースとした高精度なSPH法 (<span style="font-weight: 600;">最小二乗SPH法</span>) に関する基礎・応用研究に取り組んでいます．
+      専門は <span style="font-weight: 600; text-decoration: underline;">Smoothed Particle Hydrodynamics (SPH) 法</span> という粒子法の基礎理論やその応用研究です。これまでに最小二乗法に基づく高精度なSPH法 (<span style="font-weight: 600; text-decoration: underline;">最小二乗SPH法</span>) を開発し、任意精度が達成可能なSPH法の一般化式を構築しました。現在はその手法改良に取り組みながら、地球惑星科学における<span style="text-decoration: underline;">マントル対流</span>（超高粘性熱対流現象）や、海岸工学における<span style="text-decoration: underline;">砕波・越波・浮体揺動</span>（大変形を伴う気液二相流）などへの応用研究にも取り組んでいます。加えて、最近ではAIや画像認識技術を用いた<span style="text-decoration: underline;">コンピュータビジョン</span>に関する研究にも従事しています。
     </p>
     <div class="px-3 py-2" style="background-color: var(--global-bg-color); border: 1.5px solid var(--global-divider-color); border-radius: 8px; font-size: 0.95rem;">
       <div style="margin-bottom: 0.3rem;">
         <strong style="color: var(--global-text-color);"><i class="fa-solid fa-magnifying-glass fa-fw"></i> 研究キーワード：</strong>
       </div>
       <div style="line-height: 1.5;">
-        粒子法，最小二乗SPH法，流体計算，地球内部ダイナミクス，計算工学
+        粒子法、SPH法、最小二乗SPH法、流体計算、地球内部ダイナミクス、海岸工学、コンピュータビジョン
       </div>
     </div>
   </div>
